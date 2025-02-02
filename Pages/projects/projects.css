@@ -134,7 +134,7 @@
     content: " Database / Authentication";
   }
 
-  @media (max-width: 1100px) {
+  @media (max-width: 1250px) {
     .project-window {
         flex: 1 1 calc(50% - 10px);
         max-width: 100%;
@@ -172,3 +172,25 @@
         margin-left: 50px;
     }
 }
+
+
+@media (max-width: 400px) {
+    .heading {
+        font-size: 0.7em;
+        margin-top: 100px;
+    }
+
+    .project-description h3 {
+        font-size: 0.7em;
+    }
+
+    .project-description p {
+        font-size: 0.7em;
+    }
+    
+    .project-window {
+        margin-left: 40px;
+        margin-right: 0px;
+    }
+}
+
