@@ -1,0 +1,107 @@
+pre {
+    background-color: var(--code) !important;
+    border-bottom: 1px solid var(--primary);
+    border-top: 1px solid var(--primary);
+    color: var(--text); 
+    padding: 16px; 
+    overflow-x: auto; 
+    font-size: 14px;
+    line-height: 1 !important;
+    margin: 16px 0 !important;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    border-radius: 0px !important;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    border-top-right-radius: 8px !important;
+    border-bottom-right-radius: 8px !important;
+    border-top-left-radius: 8px !important;
+    border-bottom-left-radius: 8px !important;
+  }
+  
+  
+  code {
+    color: var(--code-text) !important;
+    padding: 2px 4px !important;
+    border-radius: 4px !important;
+    font-family: 'Courier New', Courier, monospace !important;
+    font-size: 90% !important;
+  }
+
+  @media (max-width: 768px) {
+    pre {
+      padding: 12px !important;
+      font-size: 12px !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
+      border-top-left-radius: 8px !important;
+      border-bottom-left-radius: 8px !important;
+    }
+  }
+
+  pre .copy-button {
+    background: none;
+    width: 40px;
+    border: none;
+    align-self: flex-end;
+    color: var(--text);
+    margin-top: -10px;
+    margin-right: -12px;
+    font-size: large;
+    position: absolute;
+    z-index: 500;
+    border-radius: 50px;
+  }
+
+
+/* Customize syntax tokens */
+.token.comment,
+.token.block-comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: #5B995B;
+}
+
+.token.punctuation {
+  color: var(--code-text);
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+  color: #FF8080;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+  color: #FFFF00;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.token.variable {
+  color: var(--code-text);
+}
+
+.token.function {
+  color: #FFB871;
+}
+
+.token.keyword {
+  color: #FFB871;
+}
+
+.token.builtin {
+  color: #3DE54B;
+}

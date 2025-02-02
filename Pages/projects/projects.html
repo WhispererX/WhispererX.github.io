@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Prism (Syntax Highlighter) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-okaidia.min.css" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="projects.css">
+
+    <!-- Bootstrapp Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <title id="title-projects">Projects</title>
+</head>
+
+<body>
+
+    <!-- Desktop Navbar -->
+    <nav class="desktop bg-secondary">
+        <!-- Hero -->
+        <div class="flex row hero-section" style="padding: 15px;">
+            <img class="flex column round shadow" width="35px" height="35px"
+                src="../../assets/images/whisperer_profile.png" alt="">
+            <div class="flex column justify child-no-margin" style="padding-inline: 10px;">
+                <h3>Herkus Žilaitis</h3>
+                <p class="ts-small" id="nav-1-1">Front-end Developer</p>
+            </div>
+        </div>
+        <!-- End Hero -->
+
+        <!-- Navigation Bar Items -->
+        <div class="flex column">
+            <a href="../index/index.html" id="nav-1-2"><i class="bi bi-house-fill"></i>Home</a>
+            <a href="" id="nav-1-3" class="disabled"><i class="bi bi-briefcase-fill"></i>Experience</a>
+            <a href="../projects/projects.html" id="nav-1-4" class="flex active"><i
+                    class="bi bi-pen-fill"></i>Projects</a>
+            <a href="" id="nav-1-5" class="disabled"><i class="bi bi-bar-chart-fill"></i></a>
+            <a href="../about/about.html" id="nav-1-6"><i class="bi bi-person-fill"></i>About</a>
+
+            <span id="nav-1-7">Settings</span>
+
+            <a><i id="themeIcon" class="bi bi-moon-fill"></i><select name="theme" id="themeSelect">
+                    <option value="dark" id="darkMode">Dark Mode</option>
+                    <option value="light" id="lightMode">Light Mode</option>
+                </select></a>
+            <a class="flex justify-between align"><i class="bi bi-translate"></i><select name="language"
+                    id="languageSelect">
+                    <option value="en">English</option>
+                    <option value="lt">Lietuvių</option>
+                    <option value="ru">Русский</option>
+                </select>
+                <img id="flag" class="shadow"
+                    style="border-radius: 2px; margin-left: auto; margin-right: 7px; opacity: 0.4;"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Flag_of_the_United_Kingdom_%281-2%29.svg/1200px-Flag_of_the_United_Kingdom_%281-2%29.svg.png"
+                    width="30px" height="20px" alt=""></a>
+
+            <span id="nav-1-8">Social Media</span>
+
+            <!-- These items should be displayed at the bottom (on mobile)-->
+            <a href="../contact/contact.html" id="nav-1-9"><i class="bi bi-person-lines-fill"></i>Contact</a>
+            <a href="https://github.com/WhispererX?tab=repositories" target="_blank" class="flex justify-between align">
+                <div><i class="bi bi-github"></i>Github</div>
+                <i class="bi bi-arrow-up-right-square"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/herkus-žilaitis-004b8434a/" target="_blank" class="flex justify-between align">
+                <div><i class="bi bi-linkedin"></i>LinkedIn</div>
+                <i class="bi bi-arrow-up-right-square"></i>
+            </a>
+
+            <a href="https://www.instagram.com/herkus.zz/" target="_blank" class="flex justify-between align">
+                <div><i class="bi bi-instagram"></i>Instagram</div>
+                <i class="bi bi-arrow-up-right-square"></i>
+            </a>
+
+            <a href="https://x.com/WhispererMeta" target="_blank" class="flex justify-between align">
+                <div><i class="bi bi-twitter"></i>Twitter</div>
+                <i class="bi bi-arrow-up-right-square"></i>
+            </a>
+
+            <div class="flex justify" style="align-items: flex-end; opacity: 0.4;">
+
+            </div>
+            <!-- End Nav Items -->
+        </div>
+    </nav>
+
+    <!-- Mobile Navbar -->
+    <div class="mobile">
+        <nav class="bg-secondary">
+            <!-- Hero -->
+            <div class="flex row hero-section" style="padding: 15px;">
+                <img class="flex column round shadow" width="35px" height="35px"
+                    src="../../assets/images/whisperer_profile.png" alt="">
+                <div class="flex column justify child-no-margin" style="padding-inline: 10px;">
+                    <h3>Herkus Žilaitis</h3>
+                </div>
+            </div>
+            <!-- End Hero -->
+
+            <!-- Hamburger -->
+            <div id="hamburger">
+                <i class="bi bi-list"></i>
+            </div>
+        </nav>
+
+        <!-- Nav Items -->
+        <div class="flex column nav-items bg-secondary hidden" style="z-index: 1000;">
+            <a href="../index/index.html" class="active"><i class="bi bi-house-fill"></i>Home</a>
+            <a href="../about/about.html"><i class="bi bi-person-fill"></i>About</a>
+            <a href="../projects/projects.html"><i class="bi bi-pen-fill"></i>Projects</a>
+            <a href="../contact/contact.html"><i class="bi bi-person-lines-fill"></i>Contact</a>
+            
+        </div>
+
+        <div class="flex row justify-evenly align footer">
+            <a href=""><i class="bi bi-github"></i>Github</a>
+            <a href=""><i class="bi bi-linkedin"></i>LinkedIn</a>
+            <a href=""><i class="bi bi-instagram"></i>Instagram</a>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="imageModal" class="modal">
+        <span class="modal-close" onclick="closeModal()">&times;</span>
+        <img src="" alt="Unable to load image">
+    </div>
+
+    <!-- Title and description-->
+    <div class="heading">
+        <h1 style="font-size: 3em;" id="projects-1">My Projects</h1>
+    </div>
+
+    <div class="project-container flex row">
+        <!-- Isometric world builder -->
+        <div class="project-window flew column">
+            <div class="project-info flex row">
+                <div class="project-description flex column">
+                    <h3>Isometric World Builder</h3>
+                    <p id="projects-2">A powerful system that allows users to visually design and edit isometric worlds.
+                    </p>
+                    <button id="projects-3" onclick="goto('https://github.com/WhispererX/Isometric-map-builder')">Learn More</button>
+                </div>
+                <div class="project-cover">
+                    <img src="../../assets/images/projects_isometric_cover.png" alt="IsometricWorldBuilder.png"
+                        onclick="openModal('isometric')">
+                </div>
+            </div>
+            <div class="project-tags">
+                <span>Gamemaker Studio 2</span>
+            </div>
+        </div>
+
+        <!-- WhisperChat -->
+        <div class="project-window flew column">
+            <div class="project-info flex row">
+                <div class="project-description flex column">
+                    <h3>WhisperChat</h3>
+                    <p id="projects-4">A mobile app offering seamless and secure real-time messaging, voice chats, and
+                        media sharing.
+                    </p>
+                    <button id="projects-5" onclick="goto('https://github.com/WhispererX/WhisperChat')">Learn More</button>
+                </div>
+                <div class="project-cover">
+                    <img src="../../assets/images/projects_whisperchat_cover.png" alt="WhisperChat.png"
+                        onclick="openModal('whisperchat')">
+                </div>
+            </div>
+            <div class="project-tags">
+                <span>Dart</span>
+                <span>Flutter</span>
+                <span class="firestore-tag">Firestore</span>
+            </div>
+        </div>
+
+        <!-- File Compressor-->
+        <div class="project-window flew column">
+            <div class="project-info flex row">
+                <div class="project-description flex column">
+                    <h3>File Compressor</h3>
+                    <p id="projects-6">Desktop app that reduces the size of media files.
+                    </p>
+                    <button id="projects-7" onclick="goto('https://github.com/WhispererX/FileCompressor')">Learn More</button>
+                </div>
+                <div class="project-cover">
+                    <img src="../../assets/images/projects_file_compressor_cover.png" alt="FileCompressor.png"
+                        onclick="openModal('file_compressor')">
+                </div>
+            </div>
+            <div class="project-tags">
+                <span>Javascript</span>
+                <span>Html</span>
+                <span>CSS</span>
+                <span>Electron.js</span>
+            </div>
+        </div>
+
+        <!-- Browser -->
+        <div class="project-window flew column">
+            <div class="project-info flex row">
+                <div class="project-description flex column">
+                    <h3>Browser</h3>
+                    <p id="projects-8">A tailored web browser built on Chromium using Electron.</p>
+                    <button id="projects-9" onclick="goto('https://github.com/WhispererX/Browser')">Learn More</button>
+                </div>
+                <div class="project-cover">
+                    <img src="../../assets/images/projects_browser_cover.png" alt="Browser.png"
+                        onclick="openModal('browser')">
+                </div>
+            </div>
+            <div class="project-tags">
+                <span>Javascript</span>
+                <span>Html</span>
+                <span>CSS</span>
+                <span>Electron.js</span>
+            </div>
+        </div>
+
+        <!-- Code Editor -->
+        <div class="project-window flew column">
+            <div class="project-info flex row">
+                <div class="project-description flex column">
+                    <h3>Code Editor</h3>
+                    <p id="projects-10"> A versatile and user-friendly code editor designed for customization.</p>
+                    <button id="projects-11" onclick="goto('https://github.com/WhispererX/CodeEditor')">Learn More</button>
+                </div>
+                <div class="project-cover">
+                    <img src="../../assets/images/projects_code_editor_cover.png" alt="CodeEditor.png"
+                        onclick="openModal('code_editor')">
+                </div>
+            </div>
+            <div class="project-tags">
+                <span>Javascript</span>
+                <span>Html</span>
+                <span>CSS</span>
+                <span>Electron.js</span>
+            </div>
+        </div>
+
+        <!-- Terminal -->
+        <div class="project-window flew column">
+            <div class="project-info flex row">
+                <div class="project-description flex column">
+                    <h3>Terminal</h3>
+                    <p id="projects-12"> A powerful command-line interface that allows users to interact with their
+                        system.</p>
+                    <button id="projects-13" onclick="goto('https://github.com/WhispererX/Terminal')">Learn More</button>
+                </div>
+                <div class="project-cover">
+                    <img src="../../assets/images/projects_terminal_cover.png" alt="Terminal.png"
+                        onclick="openModal('terminal')">
+                </div>
+            </div>
+            <div class="project-tags">
+                <span>Javascript</span>
+                <span>Html</span>
+                <span>CSS</span>
+                <span>Electron.js</span>
+            </div>
+        </div>
+
+        <!-- Image Search Engine -->
+        <div class="project-window flew column">
+            <div class="project-info flex row">
+                <div class="project-description flex column">
+                    <h3>Image Search Engine</h3>
+                    <p id="projects-14">A web platform that enables users to search for images using keywords.</p>
+                    <button id="projects-15" onclick='goto("../../demos/imagesearch/index.html")'>Live Demo</button>
+                </div>
+                <div class="project-cover">
+                    <img src="../../assets/images/projects_search_engine_cover.png" alt="SearchEngine.png"
+                        onclick="openModal('search_engine')">
+                </div>
+            </div>
+            <div class="project-tags">
+                <span>Javascript</span>
+                <span>Html</span>
+                <span>CSS</span>
+            </div>
+        </div>
+
+        <!-- DnD Generator-->
+        <div class="project-window flew column">
+            <div class="project-info flex row">
+                <div class="project-description flex column">
+                    <h3>D&D Generator</h3>
+                    <p id="projects-16">An interactive website that generates custom Dungeons & Dragons scenarios.</p>
+                    <button id="projects-17" onclick='goto("../../demos/dnd/index.html")'>Live Demo</button>
+                </div>
+                <div class="project-cover">
+                    <img src="../../assets/images/projects_dnd_generator_cover.png" alt="dnd_generator.png"
+                        onclick="openModal('dnd_generator')">
+                </div>
+            </div>
+            <div class="project-tags">
+                <span>Javascript</span>
+                <span>Html</span>
+                <span>CSS</span>
+                <span>OpenAI API</span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="projects.js"></script>
+    <script src="../../Components/navbar.js"></script>
+    <script src="../../Scripts/toggleTheme.js"></script>
+    <script src="../../Components/Code/code.js"></script>
+    <script src="../../Constants/localization.js"></script>
+    <script src="../../Scripts/form.js"></script>
+    
+
+</body>
+
+</html>

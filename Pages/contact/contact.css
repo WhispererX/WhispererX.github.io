@@ -1,0 +1,113 @@
+@import url('../../Styles/colors.css');
+@import url('../../Styles/alignment.css');
+@import url('../../Styles/icons.css');
+@import url('../../Components/navbar.css');
+@import url('../../Components/Code/code.css');
+@import url('../../Styles/animations.css');
+@import url('../../Styles/elements.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.form-container {
+    margin-top: 50px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--secondary);
+    width: 80%;
+    max-width: 800px;
+    margin-bottom: 90px;
+}
+
+
+.input-group {
+    margin-bottom: 20px;
+    margin-inline: 5px;
+    width: 100%;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--bold);
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--primary);
+    border-radius: 4px;
+    font-size: 16px;
+    margin-top: 5px;
+    background-color: var(--secondary);
+    color: var(--bold);
+}
+
+textarea {
+    resize: vertical;
+    height: 100px;
+    min-height: 50px;
+    max-height: 200px;
+}
+
+form h1 {
+    font-size: 1.2em;
+    margin-left: 5px;
+}
+form p {
+    margin-left: 5px;
+    margin-bottom: 20px;
+}
+
+.heading {
+    margin-top: 45px;
+}
+
+@media (max-width: 768px) {
+    .heading {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-inline: 25px;
+        font-size: 0.7em;
+    }
+
+    #contact-2 {
+        font-size: 1.2em;
+    }
+
+    .form-container {
+        margin-inline: 25px;
+        margin-top: 25px;
+    }
+
+    .mobileCenter {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.two-inputs {
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width: 480px) {
+    .two-inputs {
+        flex-direction: column;
+    }
+}
+
+form button {
+    background-color: var(--primary);
+    width: 100%;
+}
+
+.notification {
+    display: none;
+}

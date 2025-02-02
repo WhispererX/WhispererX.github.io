@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Prism (Syntax Highlighter) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-okaidia.min.css" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="about.css">
+
+    <!-- Bootstrapp Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <title id="title-about">About Me</title>
+</head>
+
+<body>
+
+    <!-- Desktop Navbar -->
+    <nav class="desktop bg-secondary">
+        <!-- Hero -->
+        <div class="flex row hero-section" style="padding: 15px;">
+            <img class="flex column round shadow" width="35px" height="35px"
+                src="../../assets/images/whisperer_profile.png" alt="">
+            <div class="flex column justify child-no-margin" style="padding-inline: 10px;">
+                <h3>Herkus Žilaitis</h3>
+                <p class="ts-small" id="nav-1-1">Front-end Developer</p>
+            </div>
+        </div>
+        <!-- End Hero -->
+
+        <!-- Navigation Bar Items -->
+        <div class="flex column">
+            <a href="../index/index.html" id="nav-1-2"><i class="bi bi-house-fill"></i>Home</a>
+            <a href="" id="nav-1-3" class="disabled"><i class="bi bi-briefcase-fill"></i>Experience</a>
+            <a href="../projects/projects.html" id="nav-1-4" class="flex"><i class="bi bi-pen-fill"></i>Projects</a>
+            <a href="" id="nav-1-5" class="disabled"><i class="bi bi-bar-chart-fill"></i>Services</a>
+            <a href="#" id="nav-1-6" class="active"><i class="bi bi-person-fill"></i>About</a>
+
+            <span id="nav-1-7">Settings</span>
+
+            <a><i id="themeIcon" class="bi bi-moon-fill"></i><select name="theme" id="themeSelect">
+                    <option value="dark" id="darkMode">Dark Mode</option>
+                    <option value="light" id="lightMode">Light Mode</option>
+                </select></a>
+            <a class="flex justify-between align"><i class="bi bi-translate"></i><select name="language"
+                    id="languageSelect">
+                    <option value="en">English</option>
+                    <option value="lt">Lietuvių</option>
+                    <option value="ru">Русский</option>
+                </select>
+                <img id="flag" class="shadow"
+                    style="border-radius: 2px; margin-left: auto; margin-right: 7px; opacity: 0.4;"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Flag_of_the_United_Kingdom_%281-2%29.svg/1200px-Flag_of_the_United_Kingdom_%281-2%29.svg.png"
+                    width="30px" height="20px" alt=""></a>
+
+            <span id="nav-1-8">Social Media</span>
+
+            <!-- These items should be displayed at the bottom (on mobile)-->
+            <a href="../contact/contact.html" id="nav-1-9"><i class="bi bi-person-lines-fill"></i>Contact</a>
+            <a href="https://github.com/WhispererX?tab=repositories" target="_blank" class="flex justify-between align">
+                <div><i class="bi bi-github"></i>Github</div>
+                <i class="bi bi-arrow-up-right-square"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/herkus-žilaitis-004b8434a/" target="_blank" class="flex justify-between align">
+                <div><i class="bi bi-linkedin"></i>LinkedIn</div>
+                <i class="bi bi-arrow-up-right-square"></i>
+            </a>
+
+            <a href="https://www.instagram.com/herkus.zz/" target="_blank" class="flex justify-between align">
+                <div><i class="bi bi-instagram"></i>Instagram</div>
+                <i class="bi bi-arrow-up-right-square"></i>
+            </a>
+
+            <a href="https://x.com/WhispererMeta" target="_blank" class="flex justify-between align">
+                <div><i class="bi bi-twitter"></i>Twitter</div>
+                <i class="bi bi-arrow-up-right-square"></i>
+            </a>
+
+            <div class="flex justify" style="align-items: flex-end; opacity: 0.4;">
+
+            </div>
+            <!-- End Nav Items -->
+        </div>
+    </nav>
+
+    <!-- Mobile Navbar -->
+    <div class="mobile">
+        <nav class="bg-secondary">
+            <!-- Hero -->
+            <div class="flex row hero-section" style="padding: 15px;">
+                <img class="flex column round shadow" width="35px" height="35px"
+                    src="../../assets/images/whisperer_profile.png" alt="">
+                <div class="flex column justify child-no-margin" style="padding-inline: 10px;">
+                    <h3>Herkus Žilaitis</h3>
+                </div>
+            </div>
+            <!-- End Hero -->
+
+            <!-- Hamburger -->
+            <div id="hamburger">
+                <i class="bi bi-list"></i>
+            </div>
+        </nav>
+
+       <!-- Nav Items -->
+       <div class="flex column nav-items bg-secondary hidden" style="z-index: 1000;">
+        <a href="../index/index.html" class="active"><i class="bi bi-house-fill"></i>Home</a>
+        <a href="../about/about.html"><i class="bi bi-person-fill"></i>About</a>
+        <a href="../projects/projects.html"><i class="bi bi-pen-fill"></i>Projects</a>
+        <a href="../contact/contact.html"><i class="bi bi-person-lines-fill"></i>Contact</a>
+        
+        </div>
+
+        <div class="flex row justify-evenly align footer">
+            <a href=""><i class="bi bi-github"></i>Github</a>
+            <a href=""><i class="bi bi-linkedin"></i>LinkedIn</a>
+            <a href=""><i class="bi bi-instagram"></i>Instagram</a>
+        </div>
+    </div>
+
+
+    <h1 class="fancy" id="about-1">Personal Information</h1>
+
+    <div class="flex column container">
+        <div class="flex column personal-info-container">
+            <div class="detail-tags">
+                <span id="about-2">Kaunas</span>
+                <span id="about-3">20 yo.</span>
+            </div>
+            <div class="flex column personal-info">
+                <h2 class="name">Herkus Žilaitis</h2>
+                <div class="flex phone">
+                    <i class="bi bi-telephone-fill"></i>
+                    <p>+37064482617</p>
+                </div>
+
+                <div class="flex email">
+                    <i class="bi bi-envelope-fill"></i>
+                    <p>herkuszilaitis@gmail.com</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="detail-tags">
+            <span id="about-4">Short Description</span>
+        </div>
+        <p id="about-5">Esu 20 metų studentas iš Lietuvos, šiuo metu studijuoju Kauno Kolegijoje.
+            Domiuosi technologijomis ir programavimu, visada ieškau naujų iššūkių
+            ir galimybes mokytis bei augti. Greitai mokausi ir sprendžiu problemas
+            visada trokštu imtis naujų projektų ir dirbti su kitais, kad pasiekti savo tikslus.
+            Nekantrauju pamatyti, kas bus ateityje, ir toliau tobulėti kaip kūrėjui.</p>
+    </div>
+
+
+    <h1 class="fancy" id="about-6">Education</h1>
+
+    <div class="detail-tags">
+        <span id="about-7">Kaunas College of Technology</span>
+    </div>
+
+    <div class="education">
+        <h2 id="about-8">Programų Sistemos</h2>
+        <p id="about-9">Bakalauras</p>
+    </div>
+
+    <div style="margin-bottom: 50px;"></div>
+    <h1 class="fancy" id="about-10">Languages</h1>
+
+    <div class="languages">
+        <table>
+            <tr class="top">
+                <th id="about-11">Language</th>
+                <th id="about-12">Speaking</th>
+                <th id="about-13">Understanding</th>
+                <th id="about-14">Writing</th>
+            </tr>
+
+            <tr class="bg-secondary">
+                <td class="flex center" id="about-15">Lithuanian</td>
+                <td class="flex center" title="Perfect">
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle-fill"></i>
+                </td>
+                <td class="flex center" title="Perfect">
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle-fill"></i>
+                </td>
+                <td class="flex center" title="Perfect">
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle-fill"></i>
+                </td>
+            </tr>
+
+            <tr class="bg-primary">
+                <td class="flex center" id="about-16">English</td>
+                <td class="flex center" title="Perfect">
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle-fill"></i>
+                </td>
+                <td class="flex center" title="Perfect">
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle-fill"></i>
+                </td>
+                <td class="flex center" title="Perfect">
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle-fill"></i>
+                </td>
+            </tr>
+
+            <tr class="bg-secondary">
+                <td class="flex center" id="about-17">Russian</td>
+                <td class="flex center" title="Basics">
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle"></i>
+                    <i class="bi bi-circle"></i>
+                    <i class="bi bi-circle"></i>
+                </td>
+                <td class="flex center" title="Basics">
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle"></i>
+                    <i class="bi bi-circle"></i>
+                    <i class="bi bi-circle"></i>
+                </td>
+                <td class="flex center" title="Basics">
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle"></i>
+                    <i class="bi bi-circle"></i>
+                    <i class="bi bi-circle"></i>
+                </td>
+            </tr>
+
+            <tr class="bg-primary bottom">
+                <td class="flex center" id="about-18">Dutch</td>
+                <td class="flex center" title="Good">
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle"></i>
+                </td>
+                <td class="flex center" title="Average">
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle"></i>
+                    <i class="bi bi-circle"></i>
+                </td>
+                <td class="flex center" title="Good">
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle"></i>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div style="margin-bottom: 50px;"></div>
+    <h1 class="fancy" id="about-19">Computer Knowledge</h1>
+
+    <div class="detail-tags align">
+        <i class="bi bi-circle-fill"></i>
+        <i class="bi bi-circle-fill"></i>
+        <i class="bi bi-circle-fill"></i>
+        <i class="bi bi-circle-fill"></i>
+        <span id="about-20">Expert</span>
+    </div>
+    <div class="education">
+        <h2 id="about-21">HTML</h2>
+        <p id="about-22">Deep understanding of semantic HTML, modern web standards, and accessibility best practices.</p>
+    </div>
+
+    <div class="detail-tags align">
+        <i class="bi bi-circle-fill"></i>
+        <i class="bi bi-circle-fill"></i>
+        <i class="bi bi-circle-fill"></i>
+        <i class="bi bi-circle"></i>
+        <span id="about-23">Experienced</span>
+    </div>
+    <div class="education">
+        <h2 id="about-24">JavaScript</h2>
+        <p id="about-25">Solid understanding of JavaScript, ES6+, and modern frameworks for dynamic web development.</p>
+    </div>
+
+    <div class="detail-tags align">
+        <i class="bi bi-circle-fill"></i>
+        <i class="bi bi-circle-fill"></i>
+        <i class="bi bi-circle-fill"></i>
+        <i class="bi bi-circle"></i>
+        <span id="about-26">Experienced</span>
+    </div>
+    <div class="education">
+        <h2 id="about-27">CSS</h2>
+        <p id="about-28">Strong knowledge of styling, animations, and modern CSS frameworks for visually appealing designs.</p>
+    </div>
+
+    <div class="detail-tags align">
+        <i class="bi bi-circle-fill"></i>
+        <i class="bi bi-circle-fill"></i>
+        <i class="bi bi-circle-fill"></i>
+        <i class="bi bi-circle"></i>
+        <span id="about-29">Experienced</span>
+    </div>
+    <div class="education">
+        <h2 id="about-30">API Developement</h2>
+        <p id="about-31">Skilled in designing, building, and integrating RESTful and GraphQL APIs for seamless data exchange.</p>
+    </div>
+
+    <div class="detail-tags align">
+        <i class="bi bi-circle-fill"></i>
+        <i class="bi bi-circle-fill"></i>
+        <i class="bi bi-circle-fill"></i>
+        <i class="bi bi-circle"></i>
+        <span id="about-32">Experienced</span>
+    </div>
+    <div class="education">
+        <h2 id="about-33">Bootstrap</h2>
+        <p id="about-34">Proficient in using Bootstrap to create responsive, mobile-friendly web interfaces.</p>
+    </div>
+
+    <div class="detail-tags align">
+        <i class="bi bi-circle-fill"></i>
+        <i class="bi bi-circle-fill"></i>
+        <i class="bi bi-circle-fill"></i>
+        <i class="bi bi-circle"></i>
+        <span id="about-35">Experienced</span>
+    </div>
+    <div class="education">
+        <h2 id="about-36">Electron</h2>
+        <p id="about-37">Experienced in developing cross-platform desktop applications using Electron.js.</p>
+    </div>
+
+    <div class="detail-tags align">
+        <i class="bi bi-circle-fill"></i>
+        <i class="bi bi-circle-fill"></i>
+        <i class="bi bi-circle-fill"></i>
+        <i class="bi bi-circle"></i>
+        <span id="about-38">Experienced</span>
+    </div>
+    <div class="education">
+        <h2 id="about-39">Firebase</h2>
+        <p id="about-40">Familiar with Firebase Authentication, Firestore, and cloud functions for scalable app development.</p>
+    </div>
+
+    <div class="detail-tags align">
+        <i class="bi bi-circle-fill"></i>
+        <i class="bi bi-circle-fill"></i>
+        <i class="bi bi-circle-fill"></i>
+        <i class="bi bi-circle"></i>
+        <span id="about-41">Experienced</span>
+    </div>
+    <div class="education">
+        <h2 id="about-42">Git</h2>
+        <p id="about-43">Proficient in version control, branching strategies, and collaborative development using Git.</p>
+    </div>
+
+    <div class="detail-tags align">
+        <i class="bi bi-circle-fill"></i>
+        <i class="bi bi-circle-fill"></i>
+        <i class="bi bi-circle-fill"></i>
+        <i class="bi bi-circle"></i>
+        <span id="about-44">Experienced</span>
+    </div>
+    <div class="education">
+        <h2 id="about-45">React Native</h2>
+        <p id="about-46">Skilled in building cross-platform mobile applications with React Native.</p>
+    </div>
+
+    <div class="detail-tags align">
+        <i class="bi bi-circle-fill"></i>
+        <i class="bi bi-circle"></i>
+        <i class="bi bi-circle"></i>
+        <i class="bi bi-circle"></i>
+        <span id="about-47">Beginner</span>
+    </div>
+    <div class="education">
+        <h2 id="about-48">Dart</h2>
+        <p id="about-49">Basic understanding of Dart syntax and its application in Flutter development.</p>
+    </div>
+
+    <div class="detail-tags align">
+        <i class="bi bi-circle-fill"></i>
+        <i class="bi bi-circle"></i>
+        <i class="bi bi-circle"></i>
+        <i class="bi bi-circle"></i>
+        <span id="about-50">Beginner</span>
+    </div>
+    <div class="education">
+        <h2 id="about-51">Flutter</h2>
+        <p id="about-52">Learning to build UI components and mobile applications using Flutter.</p>
+    </div>
+
+
+    <div style="margin-bottom: 100px;"></div>
+
+    <!-- Prism (Syntax Highlighter) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+
+    <script src="../../Components/navbar.js"></script>
+    <script src="../../Scripts/toggleTheme.js"></script>
+    <script src="../../Components/Code/code.js"></script>
+    <script src="../../Constants/localization.js"></script>
+    <script src="../../Scripts/form.js"></script>
+
+</body>
+
+</html>

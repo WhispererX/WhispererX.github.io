@@ -1,0 +1,174 @@
+@import url('../../Styles/colors.css');
+@import url('../../Styles/alignment.css');
+@import url('../../Styles/icons.css');
+@import url('../../Components/navbar.css');
+@import url('../../Components/Code/code.css');
+@import url('../../Styles/animations.css');
+@import url('../../Styles/elements.css');
+
+.heading {
+    margin-top: 45px;
+}
+
+.project-container {
+    height: 75vh;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    user-select: none;
+}
+
+.project-window {
+    flex: 1 1 calc(33.33% - 10px);
+    border: 1px solid var(--primary);
+    background-color: var(--primary);
+    max-width: 50%;
+    height: 25vh;
+    border-radius: 15px;
+    margin: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.project-description h3 {
+    margin-bottom: 0px;
+    margin-top: 5px;
+}
+
+
+
+.project-description button {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+}
+
+.project-info {
+    height: 100%;
+}
+
+.project-description {
+    width: 50%;
+    padding: 10px;
+    justify-content: flex-end; 
+}
+
+.project-cover {
+    width: 50%;
+}
+
+.project-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /*Make the image round*/
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.project-cover img:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.project-tags {
+    height: 15%;
+    margin-top: 10px;
+    /*Make sure each element stays in line*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.project-tags span {
+    background-color: var(--primary);
+    padding: 4px;
+    font-size: 0.8em;
+    border-radius: 4px;
+    margin-inline: 5px;
+    text-wrap: nowrap;
+}
+
+.project-tags span:hover {
+    opacity: 0.7;
+    cursor: default;
+    
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  .modal img {
+    
+    display: block;
+    margin: auto;
+    margin-left: 35%;
+    margin-top: 5%;
+    width: 50%;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  .modal-close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .firestore-tag::after {
+    content: " Database / Authentication";
+  }
+
+  @media (max-width: 1100px) {
+    .project-window {
+        flex: 1 1 calc(50% - 10px);
+        max-width: 100%;
+    }
+
+    .project-window:last-child {
+        margin-bottom: 100px;
+    }
+
+    .heading {
+        font-size: 0.9em;
+        margin-left: 25%;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .heading {
+        font-size: 0.8em;
+        margin-left: 15%;
+    }
+
+    .firestore-tag::after {
+        content: "";
+      }
+
+    .project-description h3 {
+        font-size: 0.9em;
+    }
+
+    .project-description p {
+        font-size: 0.8em;
+    }
+    
+    .project-window {
+        margin-left: 50px;
+    }
+}

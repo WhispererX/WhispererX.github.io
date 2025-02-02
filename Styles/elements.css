@@ -1,0 +1,33 @@
+/* Dropdown */
+select {
+    padding: 5px;
+    background-color: var(--primary);
+    color: var(--text);
+    border-radius: 4px;
+    cursor: pointer;
+    min-width: 100px;
+}
+
+select:focus {
+    outline: none;
+    box-shadow: 0 0 5px var(--accent);
+}
+
+/* Buttons */
+button {
+    padding: 10px; 
+    color: var(--bold);
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: var(--secondary);
+    border: 1px solid var(--accent);
+    transition: 0.3s;
+}
+
+button.active {
+    background-color: var(--primary);
+}
+
+button:hover {
+    opacity: 0.7;
+}

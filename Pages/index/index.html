@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Prism (Syntax Highlighter) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-okaidia.min.css" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="index.css">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <title id="title-index">Herkus Žilaitis</title>
+</head>
+
+<body>
+
+    <div id="language" class="en"></div>
+
+    <!-- Desktop Navbar -->
+    <nav class="desktop bg-secondary">
+        <!-- Hero -->
+        <div class="flex row hero-section" style="padding: 15px;">
+            <img class="flex column round shadow" width="35px" height="35px"
+                src="../../assets/images/whisperer_profile.png" alt="">
+            <div class="flex column justify child-no-margin" style="padding-inline: 10px;">
+                <h3>Herkus Žilaitis</h3>
+                <p class="ts-small" id="nav-1-1">Front-end Developer</p>
+            </div>
+        </div>
+        <!-- End Hero -->
+
+        <!-- Navigation Bar Items -->
+        <div class="flex column">
+            <a href="" class="active" id="nav-1-2"><i class="bi bi-house-fill"></i>Home</a>
+            <a href="" class="disabled" id="nav-1-3"><i class="bi bi-briefcase-fill"></i>Experience</a>
+            <a href="../projects/projects.html" id="nav-1-4" class="flex"><i class="bi bi-pen-fill"></i>Projects</a>
+            <a href="" class="disabled" id="nav-1-5"><i class="bi bi-bar-chart-fill"></i>Services</a>
+            <a href="../about/about.html" id="nav-1-6"><i class="bi bi-person-fill"></i>About</a>
+
+            <span id="nav-1-7">Settings</span>
+
+            <a><i id="themeIcon" class="bi bi-moon-fill"></i><select name="theme" id="themeSelect">
+                    <option value="dark" id="darkMode">Dark Mode</option>
+                    <option value="light" id="lightMode">Light Mode</option>
+                </select></a>
+            <a class="flex justify-between align"><i class="bi bi-translate"></i><select name="language"
+                    id="languageSelect">
+                    <option value="en">English</option>
+                    <option value="lt">Lietuvių</option>
+                    <option value="ru">Русский</option>
+                </select>
+                <img id="flag" class="shadow"
+                    style="border-radius: 2px; margin-left: auto; margin-right: 7px; opacity: 0.4;"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Flag_of_the_United_Kingdom_%281-2%29.svg/1200px-Flag_of_the_United_Kingdom_%281-2%29.svg.png"
+                    width="30px" height="20px" alt=""></a>
+
+            <span id="nav-1-8">Social Media</span>
+
+            <!-- These items should be displayed at the bottom (on mobile)-->
+            <a href="../contact/contact.html" id="nav-1-9"><i class="bi bi-person-lines-fill"></i>Contact</a>
+            <a href="https://github.com/WhispererX?tab=repositories" target="_blank" class="flex justify-between align">
+                <div><i class="bi bi-github"></i>Github</div>
+                <i class="bi bi-arrow-up-right-square"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/herkus-žilaitis-004b8434a/" target="_blank" class="flex justify-between align">
+                <div><i class="bi bi-linkedin"></i>LinkedIn</div>
+                <i class="bi bi-arrow-up-right-square"></i>
+            </a>
+
+            <a href="https://www.instagram.com/herkus.zz/" target="_blank" class="flex justify-between align">
+                <div><i class="bi bi-instagram"></i>Instagram</div>
+                <i class="bi bi-arrow-up-right-square"></i>
+            </a>
+
+            <a href="https://x.com/WhispererMeta" target="_blank" class="flex justify-between align">
+                <div><i class="bi bi-twitter"></i>Twitter</div>
+                <i class="bi bi-arrow-up-right-square"></i>
+            </a>
+
+            <div class="flex justify" style="align-items: flex-end; opacity: 0.4;">
+
+            </div>
+            <!-- End Nav Items -->
+        </div>
+    </nav>
+
+    <!-- Mobile Navbar -->
+    <div class="mobile">
+        <nav class="bg-secondary">
+            <!-- Hero -->
+            <div class="flex row hero-section" style="padding: 15px;">
+                <img class="flex column round shadow" width="35px" height="35px"
+                    src="../../assets/images/whisperer_profile.png" alt="">
+                <div class="flex column justify child-no-margin" style="padding-inline: 10px;">
+                    <h3>Herkus Žilaitis</h3>
+                </div>
+            </div>
+            <!-- End Hero -->
+
+            <!-- Hamburger -->
+            <div id="hamburger">
+                <i class="bi bi-list"></i>
+            </div>
+        </nav>
+
+        <!-- Nav Items -->
+        <div class="flex column nav-items bg-secondary hidden" style="z-index: 1000;">
+            <a href="../index/index.html" class="active"><i class="bi bi-house-fill"></i>Home</a>
+            <a href="../about/about.html"><i class="bi bi-person-fill"></i>About</a>
+            <a href="../projects/projects.html"><i class="bi bi-pen-fill"></i>Projects</a>
+            <a href="../contact/contact.html"><i class="bi bi-person-lines-fill"></i>Contact</a>
+            
+        </div>
+
+        <div class="flex row justify-evenly align footer">
+            <a href=""><i class="bi bi-github"></i>Github</a>
+            <a href=""><i class="bi bi-linkedin"></i>LinkedIn</a>
+            <a href=""><i class="bi bi-instagram"></i>Instagram</a>
+        </div>
+    </div>
+
+    <div class="hero flex column  ts-large mobileMargin" style="margin-top: 25px;">
+        <h1 id="body-1" style="margin-top: 15px;">Hey! I'm Herkus,</h1>
+        <h1 id="body-2">A <span class="text" style="text-wrap: nowrap;">Front-End</span>
+            Developer.</h1>
+        <p id="body-3" class="ts-big hideMobile">I am a developer with a strong foundation in building efficient,
+            user-centric
+            applications, and I'm eager to bring my problem-solving skills and creativity to a dynamic team.</p>
+    </div>
+
+    <a href="../../assets/herkus-zilaitis.pdf" download="herkus-zilaitis.pdf"> <button id="body-4" class="mobileMargin"
+            style="margin-top: 15px; margin-bottom: 15px;">Download My CV <i class="bi bi-download"></i></button></a>
+
+
+    <pre><button class="copy-button" data-code="code1"><i class="bi bi-clipboard-fill"></i></button><code class="language-gml" id="codeEmail">var email = herkusherkus.herkus@gmail.com</code></pre>
+    <p id="code1" style="display: none;">herkusherkus.herkus@gmail.com</p>
+    <pre><button class="copy-button" data-code="code2"><i class="bi bi-clipboard-fill"></i></button><code id="code2" class="language-gml">var describtion = function() {
+    return "I'm a 20 year old student from Lithuania, currently studying at Vilnius University.
+    I'm passionate about technology and programming, and I'm always looking for new challenges
+    and opportunities to learn and grow. I'm a quick learner and a problem solver, and I'm
+    always eager to take on new projects and work with others to achieve our goals.
+    I'm excited to see what the future holds and to continue growing as a developer.";
+}</code></pre>
+
+    <h2 class="fancy mobileMargin text" id="body-5">Languages I use</h2>
+
+    <div class="flex row mobileCenter" style="gap: 30px; row-gap: 10px;  flex-wrap: wrap;">
+        <div class="flex column align justify shadow hover box"
+            style="margin-top: 20px; background-color: var(--primary);  border-radius: 8px;">
+            <i class="bi bi-filetype-js" style="font-size: 3em; margin-left: 15px;"></i>
+        </div>
+        <div class="flex column align justify shadow hover box"
+            style="margin-top: 20px; background-color: var(--primary);  border-radius: 8px;">
+            <i class="bi bi-filetype-css" style="font-size: 3em; margin-left: 15px;"></i>
+        </div>
+        <div class="flex column align justify shadow hover box"
+            style="margin-top: 20px; background-color: var(--primary);  border-radius: 8px;">
+            <i class="bi bi-filetype-html" style="font-size: 3em; margin-left: 15px;"></i>
+        </div>
+        <div class="flex column align justify shadow hover box"
+            style="margin-top: 20px; background-color: var(--primary);  border-radius: 8px;">
+            <i class="bi bi-filetype-cs" style="font-size: 3em; margin-left: 15px;"></i>
+        </div>
+        <div class="flex column align justify shadow hover box"
+            style="margin-top: 20px; background-color: var(--primary);  border-radius: 8px;">
+            <svg style="width: 45;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path fill="#858585"
+                    d="M378.6 78.9c-2.8-.1-5.6-.2-8.5-.2l-264.1 0 143.2-72C256.6 2.3 268 0 279.6 0c13.5 0 29.4 9.2 37 16.8l62 62zM107.3 96.5l262.8 0c16 0 25.4 1.4 35.4 9.3L512 212.2 512 421l-79.3 .7L107.3 96.5zM96.5 373l0-262.2L420.3 434.6l.7 77.4-212.2 0-98.1-98.2 0 0C99.4 402.5 96.5 398.5 96.5 373zM78.7 105.3l0 267.7c0 3.3 .1 6.3 .2 9.1l-62-62C6.5 309.3 0 294.3 0 279.6c0-6.8 3.9-17.5 6.7-23.6l72-150.7z" />
+            </svg>
+            <h3 class="text">Dart</h3>
+        </div>
+
+    </div>
+
+    <h2 class="fancy mobileMargin text" id="body-6" style="margin-top: 25px;">Frameworks</h2>
+
+    <div class="flex row mobileCenter mobileMarginBottom" style="gap: 30px; row-gap: 10px; flex-wrap: wrap; ">
+        <div class="flex column align justify shadow hover box"
+            style="margin-top: 20px; background-color: var(--primary);  border-radius: 8px;">
+            <h3><span class="text">Electron</span>js</h3>
+        </div>
+        <div class="flex column align justify shadow hover box"
+            style="margin-top: 20px; background-color: var(--primary);  border-radius: 8px;">
+            <h3><span class="text">React</span></h3>
+        </div>
+        <div class="flex column align justify shadow hover box"
+            style="margin-top: 20px; background-color: var(--primary);  border-radius: 8px;">
+            <h3><span class="text">Expo</span></h3>
+        </div>
+        <div class="flex column align justify shadow hover box"
+            style="margin-top: 20px; background-color: var(--primary);  border-radius: 8px;">
+            <h3><span class="text">Node</span>js</h3>
+        </div>
+        <div class="flex column align justify shadow hover box"
+            style="margin-top: 20px; background-color: var(--primary);  border-radius: 8px;">
+            <h3><span class="text">Flutter</span></h3>
+        </div>
+    </div>
+
+    <!-- Prism (Syntax Highlighter) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+
+    <script src="../../Components/navbar.js"></script>
+    <script src="../../Scripts/toggleTheme.js"></script>
+    <script src="../../Components/Code/code.js"></script>
+    <script src="../../Constants/localization.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+body {
+    background-color: rgb(14, 14, 14);
+    color: aliceblue;
+    margin: 0px 50px;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    margin: 15px;
+    margin-bottom: 70px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    min-height: 70vh;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    background-image: url("");
+    opacity: 0.5;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content img {
+    border-radius: 15px;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+    min-height: 70vh;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    background-image: url("");
+    opacity: 0.5;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text p {
+    font-weight: 500;
+    margin: 40px;
+    /*Align the text to be full width*/
+    text-align: justify;
+    font-size: 1.5rem;
+}
+
+
+
+.input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.input input {
+    width: 80%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: aliceblue;
+    font-size: 1.5rem;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px 0 aliceblue;
+    margin-left: 35px;
+}
+
+.input i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    font-size: 1.5em;
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;  
+}
+
+.input i:hover {
+    opacity: 0.5;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}

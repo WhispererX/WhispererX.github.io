@@ -1,0 +1,120 @@
+@import url('../../Styles/colors.css');
+@import url('../../Styles/alignment.css');
+@import url('../../Styles/icons.css');
+@import url('../../Components/navbar.css');
+@import url('../../Components/Code/code.css');
+@import url('../../Styles/animations.css');
+@import url('../../Styles/elements.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.detail-tags {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+.detail-tags span {
+    background-color: var(--accent);
+    padding: 2px;
+    font-size: 0.8em;
+    border-radius: 4px;
+    margin-inline-end: 10px;
+}
+
+.detail-tags i {
+    font-size: 0.6em;
+    margin-inline-end: -5px;
+}
+
+.personal-info, .education {
+    background-color: var(--primary);
+    padding: 15px;
+    border-radius: 5px;
+    width: 500px;
+    max-width: 100%;
+}
+
+h1 {
+    margin-top: 30px;
+}
+
+tr {
+    display: flex;
+    background-color: var(--primary);
+    gap: 50px;
+}
+
+th {
+    width: 100px;
+    padding: 5px;
+}
+
+td {
+    width: 100px;
+    padding: 5px; 
+}
+
+td i {
+    font-size: 0.7em;
+}
+
+table {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.top {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.bottom {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+#about-5 {
+    max-width: 1000px;
+}
+
+.languages {
+    overflow-x: auto;
+}
+
+@media (max-width: 768px) {
+    .personal-info, .education {
+        width: 100%;
+        padding: 10px;
+    }
+
+    tr {
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    th, td {
+        width: auto;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    body {
+        margin-inline: 20px;
+    }
+    
+}
