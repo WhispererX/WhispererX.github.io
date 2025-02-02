@@ -17,11 +17,15 @@ const localization = {
     body_5: `Languages`,
     body_6: `Frameworks`,
 
+    exp_1: `Error 404!`,
+    exp_2: `<span class="text" style="text-wrap: nowrap;">No Experience</span> Found.`,
+    exp_3: `At this time, I do not have professional experience. However, I am continuously developing my skills through personal projects and learning opportunities. This page will be updated as I gain relevant experience.`,
+
     about_1: `Personal Information`,
     about_2: `Kaunas`,
-    about_3: `20 years old`,
+    about_3: `21 years old`,
     about_4: `Short Description`,
-    about_5: `I'm a 20 year old student from Lithuania, currently studying at Kaunas College of Technology. I'm interested in technology and programming, and I'm always looking for new challenges and opportunities to learn and grow. I'm a quick learner and a problem solver, and I'm always eager to take on new projects and work with others to achieve our goals. I'm excited to see what the future holds and to continue growing as a developer.`,
+    about_5: `I'm a 21 year old student from Lithuania, currently studying at Kaunas College of Technology. I'm interested in technology and programming, and I'm always looking for new challenges and opportunities to learn and grow. I'm a quick learner and a problem solver, and I'm always eager to take on new projects and work with others to achieve our goals. I'm excited to see what the future holds and to continue growing as a developer.`,
     about_6: `Education`,
     about_7: `Kaunas College of Technology`,
     about_8: `Software systems`,
@@ -90,7 +94,7 @@ const localization = {
 
     codeEmail: `var email = herkusherkus.herkus@gmail.com`,
     code2: `var describtion = function() {
-    return "I'm a 20 year old student from Lithuania, currently studying at Kaunas College.
+    return "I'm a 21 year old student from Lithuania, currently studying at Kaunas College.
     I'm passionate about technology and programming, and I'm always looking for new challenges
     and opportunities to learn and grow. I'm a quick learner and a problem solver, and I'm
     always eager to take on new projects and work with others to achieve our goals.
@@ -105,6 +109,7 @@ const localization = {
     title_contact: `Contact Me`,
     title_about: `About Me`,
     title_projects: `My Projects`,
+    title_experience: `Experience`,
     contact_1: `Contact`,
     contact_2: `I’m always looking to collaborate on interesting projects with great people. Need a supportive hand? I have two!`,
     contact_3: `Send a message`,
@@ -141,11 +146,15 @@ const localization = {
     body_5: `Programuoju`,
     body_6: `Karkasai`,
 
+    exp_1: `Klaida 404!`,
+    exp_2: `<span class="text" style="text-wrap: nowrap;">Patirtis</span> Nerasta.`,
+    exp_3: `Šiuo metu neturiu profesionalios patirties. Tačiau, pastoviai tobulinu savo sugebėjimus, kūrdamas individualius projektus ir mokindamasis. Šis puslapis bus atnaujintas, kai įgausiu patirties.`,
+
     about_1: `Asmeninė informacija`,
     about_2: `Kaunas`,
-    about_3: `20 metų`,
+    about_3: `21 metų`,
     about_4: `Trumpas aprašymas`,
-    about_5: `Esu 20 metų studentas iš Lietuvos, šiuo metu studijuoju Kauno Kolegijoje. Domiuosi technologijomis ir programavimu, visada ieškau naujų iššūkių ir galimybes mokytis bei augti. Greitai mokausi ir sprendžiu problemas visada trokštu imtis naujų projektų ir dirbti su kitais, kad pasiekti savo tikslus. Nekantrauju pamatyti, kas bus ateityje, ir toliau tobulėti kaip kūrėjui.`,
+    about_5: `Esu 21 metų studentas iš Lietuvos, šiuo metu studijuoju Kauno Kolegijoje. Domiuosi technologijomis ir programavimu, visada ieškau naujų iššūkių ir galimybes mokytis bei augti. Greitai mokausi ir sprendžiu problemas visada trokštu imtis naujų projektų ir dirbti su kitais, kad pasiekti savo tikslus. Nekantrauju pamatyti, kas bus ateityje, ir toliau tobulėti kaip kūrėjui.`,
     about_6: `Išsilavinimas`,
     about_7: `Kauno Kolegija`,
     about_8: `Programų Sistemos`,
@@ -190,7 +199,7 @@ const localization = {
 
     codeEmail: `var paštas = herkusherkus.herkus@gmail.com`,
     code2: `var aprašymas = funkcija() {
-    return "Esu 20 metų studentas iš Lietuvos, šiuo metu studijuoju Kauno Kolegijoje.
+    return "Esu 21 metų studentas iš Lietuvos, šiuo metu studijuoju Kauno Kolegijoje.
     Domiuosi technologijomis ir programavimu, visada ieškau naujų iššūkių
     ir galimybes mokytis bei augti. Greitai mokausi ir sprendžiu problemas
     visada trokštu imtis naujų projektų ir dirbti su kitais, kad pasiekti savo tikslus.
@@ -205,6 +214,7 @@ const localization = {
     title_contact: `Susisiekime!`,
     title_about: `Apie Mane`,
     title_projects: `Mano Projektai`,
+    title_experience: `Patirtis`,
     contact_1: `Kontaktai`,
     contact_2: `Aš visada ieškau kolegų, kurie nori kurti įdomius projektus. Reikia pagalbos rankos? Turiu dvi!`,
     contact_3: `Parašykite man`,
@@ -241,11 +251,15 @@ const localization = {
     body_5: `Языки, которые я использую`,
     body_6: `Фреймворки`,
 
+    exp_1: `Ошибка 404!`,
+    exp_2: `<span class="text" style="text-wrap: nowrap;">Опыт</span> не найден.`,
+    exp_3: `В настоящее время у меня нет профессионального опыта. Однако я постоянно развиваю свои навыки, создавая индивидуальные проекты и обучаясь. Эта страница будет обновлена, когда я приобрету опыт.`,
+
     about_1: `Персональная информация`,
     about_2: `Вильнюс`,
-    about_3: `20 лет`,
+    about_3: `21 лет`,
     about_4: `Краткое описание`,
-    about_5: `Я 20-летний студент из Литвы, в настоящее время учусь в Вильнюсском университетe и увлекаюсь технологиями и программированием. Я всегда ищу новые задачи и возможности учиться и расти. Я быстро учусь и умею решать проблемы, и я всегда готовы браться за новые проекты и работать с другими для достижения наших целей. Я с нетерпением жду возможности увидеть, что нас ждет в будущем, и продолжать расти как разработчик.`,
+    about_5: `Я 21-летний студент из Литвы, в настоящее время учусь в Вильнюсском университетe и увлекаюсь технологиями и программированием. Я всегда ищу новые задачи и возможности учиться и расти. Я быстро учусь и умею решать проблемы, и я всегда готовы браться за новые проекты и работать с другими для достижения наших целей. Я с нетерпением жду возможности увидеть, что нас ждет в будущем, и продолжать расти как разработчик.`,
     about_6: `Образование`,
     about_7: `Вильнюсский университет`,
     about_8: `Системы программирования`,
@@ -290,7 +304,7 @@ const localization = {
 
     codeEmail: `var почта = herkusherkus.herkus@gmail.com`,
     code2: `var описание = функция() {
-    return "Я 20-летний студент из Литвы, в настоящее время учусь в Вильнюсском университете.
+    return "Я 21-летний студент из Литвы, в настоящее время учусь в Вильнюсском университете.
     Я увлечен технологиями и программированием и всегда ищу новые задачи.
     и возможности учиться и расти. Я быстро учусь и умею решать проблемы, и я
     всегда готовы браться за новые проекты и работать с другими для достижения наших целей.
@@ -305,6 +319,7 @@ const localization = {
     title_contact: `Свяжитесь со мной!`,
     title_about: `Обо мне`,
     title_projects: `Проекты`,
+    title_experience: `Опыт`,
     contact_1: `Контакты`,
     contact_2: `Я всегда ищу коллег, которые хотят создавать интересные проекты. Нужна поддержка? Я есть!`,
     contact_3: `Напишите мне`,
@@ -330,7 +345,7 @@ const setLanguage = (language) => {
   document.getElementById("nav-1-2").innerHTML = localizationData.nav_1_2;
   document.getElementById("nav-1-3").innerHTML = localizationData.nav_1_3;
   document.getElementById("nav-1-4").innerHTML = localizationData.nav_1_4;
-  document.getElementById("nav-1-5").innerHTML = localizationData.nav_1_5;
+  // document.getElementById("nav-1-5").innerHTML = localizationData.nav_1_5;
   document.getElementById("nav-1-6").innerHTML = localizationData.nav_1_6;
   document.getElementById("nav-1-7").innerHTML = localizationData.nav_1_7;
   document.getElementById("nav-1-8").innerHTML = localizationData.nav_1_8;
@@ -454,6 +469,15 @@ const setLanguage = (language) => {
       localizationData.projects_16;
     document.getElementById("projects-17").innerHTML =
       localizationData.projects_17;
+  }
+
+  const titleExperience = document.getElementById("title-experience");
+  if (titleExperience) {
+    titleExperience.innerHTML = localizationData.title_experience;
+
+    document.getElementById("exp-1").innerHTML = localizationData.exp_1;
+    document.getElementById("exp-2").innerHTML = localizationData.exp_2;
+    document.getElementById("exp-3").innerHTML = localizationData.exp_3;
   }
 };
 

@@ -1,0 +1,65 @@
+@import url('../../Styles/colors.css');
+@import url('../../Styles/alignment.css');
+@import url('../../Styles/icons.css');
+@import url('../../Components/navbar.css');
+@import url('../../Components/Code/code.css');
+@import url('../../Styles/animations.css');
+@import url('../../Styles/elements.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Design for Tablets */
+@media (max-width: 768px) {
+    h1 {
+        font-size: larger;
+    }
+
+    .mobileCenter {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    } 
+
+    .mobileMargin {
+        margin-left: 10%;
+    }
+    p {
+        text-wrap: wrap;
+        margin-right: 20px;
+    }
+    
+    #body-1, #body-2 {
+        font-size: 1em;
+    }
+    
+}
+
+.box {
+    width: 150px; 
+    height: 100px;
+}
+
+/* Design for Phones */
+@media (max-width: 480px) {
+    .hideMobile {
+        display: none;
+    }
+
+    .box {
+        width: 100px; 
+        height: 60px;
+    }
+
+    .mobileMarginBottom {
+        margin-bottom: 100px;
+    }
+
+    
+}
+
