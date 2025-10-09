@@ -1,0 +1,18 @@
+{
+	"name": "Name",
+	"about": "About",
+	"projects": "Projects",
+	"contact": "Contact",
+	"skills": "Skills",
+	"experience": "Experience",
+	"education": "Education",
+	"welcome": "Welcome to my portfolio",
+	"description": "I'm a passionate developer creating amazing web experiences",
+	"viewProject": "View Project",
+	"getInTouch": "Get in Touch",
+	"email": "Email",
+	"phone": "Phone",
+	"location": "Location",
+	"language": "Language",
+	"downloadCV": "Download CV"
+}

@@ -1,0 +1,25 @@
+/*======= THEME =======*/
+:root {
+  --color-bg: #171717;
+  --color-fg: #1a1a1a;
+
+  --color-text: #f5f5f5;
+  --color-muted: #858585;
+
+  --color-border: #303030;
+  --color-highlight: #232323;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-bg: #f5f5f5;
+    --color-fg: #ffffff;
+
+    --color-text: #1a1a1a;
+    --color-muted: #858585;
+
+    --color-border: #d0d0d0;
+    --color-highlight: #e8e8e8;
+  }
+}
+/*==== END OF THEME ====*/
