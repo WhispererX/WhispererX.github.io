@@ -18,9 +18,18 @@ import {
 	FaPhp,
 	FaReact,
 	FaAtom,
+	FaPhone,
+	FaEnvelope,
+	FaGitAlt,
+	FaBootstrap,
+	FaArrowUpRightFromSquare,
+	FaClipboard,
+	FaClipboardCheck,
 } from 'react-icons/fa6';
 
 import { MdLightMode, MdDarkMode, MdGTranslate } from 'react-icons/md';
+import { IoLogoFirebase } from 'react-icons/io5';
+
 //#endregion
 
 export default function useIcons() {
@@ -43,6 +52,14 @@ export default function useIcons() {
 		node: <FaNodeJs />,
 		php: <FaPhp />,
 		react: <FaReact />,
-		electron: <FaAtom />,
+        electron: <FaAtom />,
+        firebase: <IoLogoFirebase />,
+        phone: <FaPhone />,
+        email: <FaEnvelope />,
+        git: <FaGitAlt />,
+        bootstrap: <FaBootstrap />,
+        externalLink: <FaArrowUpRightFromSquare />,
+        clipboard: <FaClipboard />,
+        clipboardCheck: <FaClipboardCheck />,
 	};
 }
