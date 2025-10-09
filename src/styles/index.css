@@ -1,2 +1,135 @@
 @import url('./normalize.css');
 @import url('./theme.css');
+
+:root {
+	font-size: 14px;
+}
+
+body {
+	background-color: var(--color-bg);
+	color: var(--color-muted);
+}
+
+#root {
+	display: flex;
+	flex-direction: row;
+	height: 100vh;
+	width: 100vw;
+}
+
+/*======= SIDEBAR =======*/
+#sidebarContainer {
+	display: flex;
+	flex-direction: column;
+
+	background-color: var(--color-fg);
+	border-right: 1px solid var(--color-border);
+
+	width: 250px;
+	max-width: 250px;
+}
+
+#sidebarHeader {
+	display: grid;
+	grid-template: repeat(2, auto) / repeat(2, auto);
+	grid-template-areas:
+		'image name'
+		'image title';
+
+	padding: 1rem;
+	column-gap: 1rem;
+	align-items: center;
+	justify-content: start;
+}
+
+#profileImage {
+	grid-area: image;
+
+	width: 2.5rem;
+	height: 2.5rem;
+	border-radius: 50%;
+	object-fit: cover;
+}
+
+#profileName {
+	grid-area: name;
+	font-weight: bold;
+	font-size: 1.2rem;
+	color: var(--color-text);
+}
+
+#profileTitle {
+	grid-area: title;
+
+	font-size: 0.9rem;
+	color: var(--color-muted);
+}
+
+.sidebarLinks {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+
+	margin: 0;
+	padding: 0 10px;
+	gap: 5px;
+}
+
+.sidebarDivider {
+	margin: 1rem 0 0.5rem 10px;
+	padding: 0 5px;
+
+	font-size: 0.95rem;
+	font-weight: bold;
+}
+
+.sidebarItem {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	gap: 1rem;
+
+	border-radius: 4px;
+	border: 1px solid transparent;
+
+	font-size: 0.95rem;
+	transition: all 100ms ease-in-out;
+	cursor: pointer;
+}
+
+.sidebarItem:hover {
+	color: var(--color-text);
+}
+
+.sidebarItem:has(a.active):not([isSetting]) {
+	background-color: var(--color-highlight);
+	color: var(--color-text);
+	border: 1px solid var(--color-border);
+}
+
+.sidebarItem a {
+	display: flex;
+	align-items: center;
+	flex: 1;
+	gap: 1rem;
+	padding: 0.5rem 1rem;
+	text-decoration: none;
+	color: inherit;
+}
+
+.externalLinkIcon {
+    padding: 0 1rem;
+}
+
+/*======= INPUTS =======*/
+select {
+	background-color: var(--color-highlight);
+	color: inherit;
+	border: 1px solid var(--color-border);
+	border-radius: 4px;
+	padding: 0.25rem 0.5rem;
+	width: 15ch;
+	max-width: 150px;
+	cursor: pointer;
+}

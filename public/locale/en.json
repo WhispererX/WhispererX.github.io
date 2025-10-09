@@ -1,18 +1,15 @@
 {
-	"name": "Name",
-	"about": "About",
-	"projects": "Projects",
-	"contact": "Contact",
-	"skills": "Skills",
-	"experience": "Experience",
-	"education": "Education",
-	"welcome": "Welcome to my portfolio",
-	"description": "I'm a passionate developer creating amazing web experiences",
-	"viewProject": "View Project",
-	"getInTouch": "Get in Touch",
-	"email": "Email",
-	"phone": "Phone",
-	"location": "Location",
-	"language": "Language",
-	"downloadCV": "Download CV"
+    "profileTitle": "Full-Stack Developer",
+    "settings": "Settings",
+    "socialMedia": "Social Media",
+    "lightMode": "Light Mode",
+    "darkMode": "Dark Mode",
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact",
+
+    "english": "English",
+    "lithuanian": "Lithuanian",
+    "russian": "Russian"
 }

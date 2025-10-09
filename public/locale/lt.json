@@ -1,18 +1,15 @@
 {
-	"name": "Vardas",
+	"profileTitle": "Tinklapių Dizaineris",
+	"settings": "Nustatymai",
+	"socialMedia": "Socialiniai tinklai",
+	"lightMode": "Šviesus režimas",
+	"darkMode": "Tamsus režimas",
+	"home": "Pagrindinis",
 	"about": "Apie",
 	"projects": "Projektai",
 	"contact": "Kontaktai",
-	"skills": "Įgūdžiai",
-	"experience": "Patirtis",
-	"education": "Išsilavinimas",
-	"welcome": "Sveiki atvykę į mano portfolio",
-	"description": "Esu aistringo kūrėjo kuriančio nuostabius žiniatinklio sprendimus",
-	"viewProject": "Žiūrėti projektą",
-	"getInTouch": "Susisiekti",
-	"email": "El. paštas",
-	"phone": "Telefonas",
-	"location": "Vieta",
-	"language": "Kalba",
-	"downloadCV": "Atsisiųsti CV"
+
+	"english": "Anglų",
+	"lithuanian": "Lietuvių",
+	"russian": "Rusų"
 }
