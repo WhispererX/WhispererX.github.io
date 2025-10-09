@@ -11,5 +11,11 @@
 
 	"english": "Anglų",
 	"lithuanian": "Lietuvių",
-	"russian": "Rusų"
+	"russian": "Rusų",
+
+	"welcome": "Sveiki! Aš esu Herkus,\n [Tinklapių] dizaineris.",
+    "description": "Esu programuotojas, turintis tvirtus pagrindus kuriant efektyvias, vartotojui draugiškas programas, ir noriu pritaikyti savo problemų sprendimo įgūdžius bei kūrybiškumą dinamiškoje komandoje.",
+    "downloadCV": "Atsisiųsti CV",
+
+    "technologies": "Technologijos"
 }

@@ -1,15 +1,21 @@
 {
-    "profileTitle": "Full-Stack Developer",
-    "settings": "Settings",
-    "socialMedia": "Social Media",
-    "lightMode": "Light Mode",
-    "darkMode": "Dark Mode",
-    "home": "Home",
-    "about": "About",
-    "projects": "Projects",
-    "contact": "Contact",
+	"profileTitle": "Full-Stack Developer",
+	"settings": "Settings",
+	"socialMedia": "Social Media",
+	"lightMode": "Light Mode",
+	"darkMode": "Dark Mode",
+	"home": "Home",
+	"about": "About",
+	"projects": "Projects",
+	"contact": "Contact",
 
-    "english": "English",
-    "lithuanian": "Lithuanian",
-    "russian": "Russian"
+	"english": "English",
+	"lithuanian": "Lithuanian",
+	"russian": "Russian",
+
+    "welcome": "Hey! I'm Herkus,\n a [Full-Stack] Developer.",
+    "description": "I am a developer with a strong foundation in building efficient, user-centric applications, and I'm eager to bring my problem-solving skills and creativity to a dynamic team.",
+    "downloadCV": "Download CV",
+
+    "technologies": "Technologies"
 }

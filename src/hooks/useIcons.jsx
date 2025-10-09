@@ -27,7 +27,12 @@ import {
 	FaClipboardCheck,
 } from 'react-icons/fa6';
 
-import { MdLightMode, MdDarkMode, MdGTranslate } from 'react-icons/md';
+import {
+	MdLightMode,
+	MdDarkMode,
+	MdGTranslate,
+	MdOutlineFileDownload,
+} from 'react-icons/md';
 import { IoLogoFirebase } from 'react-icons/io5';
 
 //#endregion
@@ -60,6 +65,7 @@ export default function useIcons() {
         bootstrap: <FaBootstrap />,
         externalLink: <FaArrowUpRightFromSquare />,
         clipboard: <FaClipboard />,
-        clipboardCheck: <FaClipboardCheck />,
+		clipboardCheck: <FaClipboardCheck />,
+		download: <MdOutlineFileDownload />,
 	};
 }

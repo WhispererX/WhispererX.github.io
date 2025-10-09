@@ -1,12 +1,15 @@
-import React from 'react'
-import { Outlet } from 'react-router'
-import Sidebar from './components/Sidebar'
+import React from 'react';
+import { Outlet } from 'react-router';
+import Sidebar from './components/Sidebar';
 
 export default function App() {
-  return (
-    <>
-      <Sidebar />
-      <Outlet />
-    </>
-  )
+	return (
+		<>
+			<Sidebar />
+
+			<main>
+				<Outlet />
+			</main>
+		</>
+	);
 }

@@ -90,7 +90,7 @@ export default function Sidebar() {
 			<ul className="sidebarLinks">
 				<SidebarItem
                     icon={themeIcon}
-                    isSetting="true"
+                    is_setting="true"
 					content={
 						<select id="themeSelect">
 							<option value="light">{locale.lightMode}</option>
@@ -101,7 +101,7 @@ export default function Sidebar() {
 				/>
 				<SidebarItem
                     icon={translate}
-                    isSetting="true"
+                    is_setting="true"
 					content={
 						<select id="languageSelect">
 							<option value="en">{locale.english}</option>
