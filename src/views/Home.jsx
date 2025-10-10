@@ -53,14 +53,18 @@ export default function Home() {
 				}
 			/>
 
-			<h2>{locale.technologies}</h2>
-			<div id="technologies">
+			<h2>{locale.frontendTechnologies}</h2>
+			<div className="technologies">
 				<Technology icon={js} title="JavaScript" />
 				<Technology icon={react} title="React" />
-				<Technology icon={php} title="PHP" />
-				<Technology icon={electron} title="Electron" />
 				<Technology icon={css} title="CSS" />
 				<Technology icon={html} title="HTML" />
+			</div>
+
+			<h2>{locale.backendTechnologies}</h2>
+			<div className="technologies">
+				<Technology icon={php} title="PHP" />
+				<Technology icon={electron} title="Electron" />
 				<Technology icon={node} title="Node.js" />
 				<Technology icon={firebase} title="Firebase" />
 			</div>

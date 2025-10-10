@@ -17,5 +17,6 @@
     "description": "I am a developer with a strong foundation in building efficient, user-centric applications, and I'm eager to bring my problem-solving skills and creativity to a dynamic team.",
     "downloadCV": "Download CV",
 
-    "technologies": "Technologies"
+    "frontendTechnologies": "Frontend Technologies",
+	"backendTechnologies": "Backend Technologies"
 }

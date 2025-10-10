@@ -201,6 +201,16 @@ button.button a {
 	color: inherit;
 }
 
+/*======= SCROLLBAR =======*/
+::-webkit-scrollbar {
+	width: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: var(--color-border);
+	border-radius: 4px;
+}
+
 /*======= EFFECTS =======*/
 .muted {
 	color: var(--color-muted);
@@ -217,7 +227,7 @@ pre {
 }
 
 /*======= TECHNOLOGIES =======*/
-#technologies {
+.technologies {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 1rem;
@@ -247,11 +257,16 @@ pre {
 .technology:nth-child(even):not(:hover) {
 	background-color: var(--color-fg);
 	color: var(--color-text);
-	animation: float 3s infinite;
 }
 
-.technology:nth-child(odd):not(:hover) {
-	animation: float 2s infinite;
+.technology:hover {
+	color: var(--color-text);
+	transform: perspective(200px) rotateX(10deg) scale(1.05) translateY(-5px);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.technology .icon {
+	font-size: 2rem;
 }
 
 @keyframes float {
@@ -264,14 +279,4 @@ pre {
 	100% {
 		transform: translateY(0);
 	}
-}
-
-.technology:hover {
-	color: var(--color-text);
-	transform: perspective(200px) rotateX(10deg) scale(1.05) translateY(-5px);
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.technology .icon {
-	font-size: 2rem;
 }
