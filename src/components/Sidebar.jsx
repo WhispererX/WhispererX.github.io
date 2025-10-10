@@ -4,10 +4,12 @@ import useIcons from '../hooks/useIcons';
 import { NavLink } from 'react-router';
 import ProfilePicture from '../assets/profile.jpg';
 import { getLanguage, setLanguage } from '../hooks/useLocale';
+import FlagEn from '../assets/flag-en.png';
+import FlagLt from '../assets/flag-lt.png';
+import FlagRu from '../assets/flag-ru.png';
 
 export default function Sidebar() {
 	const [theme, setTheme] = React.useState('dark');
-
 	const locale = useLocale();
 	const {
 		house,
@@ -23,7 +25,14 @@ export default function Sidebar() {
 		twitter,
 	} = useIcons();
 
+	const flags = {
+		en: FlagEn,
+		lt: FlagLt,
+		ru: FlagRu,
+	}
+
 	const [themeIcon, setThemeIcon] = React.useState(darkMode);
+	const [flagIcon, setFlagIcon] = React.useState(flags[getLanguage()] || FlagEn);
 
 	React.useEffect(() => {
 		document.body.className = theme;
@@ -53,9 +62,10 @@ export default function Sidebar() {
 		const languageSelect = document.getElementById('languageSelect');
 		if (languageSelect) {
 			languageSelect.value = getLanguage();
-			languageSelect.addEventListener('change', (e) =>
-				setLanguage(e.target.value)
-			);
+			languageSelect.addEventListener('change', (e) => {
+				setFlagIcon(flags[e.target.value] || FlagEn);
+				setLanguage(e.target.value);
+			});
 		}
 
 		return () => {
@@ -66,9 +76,10 @@ export default function Sidebar() {
 			}
 
 			if (languageSelect) {
-				languageSelect.removeEventListener('change', (e) =>
-					setLanguage(e.target.value)
-				);
+				languageSelect.removeEventListener('change', (e) => {
+					setFlagIcon(flags[e.target.value] || FlagEn);
+					setLanguage(e.target.value);
+				});
 			}
 		};
 	}, [theme]);
@@ -83,14 +94,18 @@ export default function Sidebar() {
 			<ul className="sidebarLinks">
 				<SidebarItem icon={house} content={locale.home} href="/" />
 				<SidebarItem icon={about} content={locale.about} href="/about" />
-				<SidebarItem icon={projects} content={locale.projects} href="/projects" />
+				<SidebarItem
+					icon={projects}
+					content={locale.projects}
+					href="/projects"
+				/>
 				<SidebarItem icon={contact} content={locale.contact} href="/contact" />
 			</ul>
 			<span className="sidebarDivider">{locale.settings}</span>
 			<ul className="sidebarLinks">
 				<SidebarItem
-                    icon={themeIcon}
-                    is_setting="true"
+					icon={themeIcon}
+					is_setting="true"
 					content={
 						<select id="themeSelect">
 							<option value="light">{locale.lightMode}</option>
@@ -100,8 +115,8 @@ export default function Sidebar() {
 					href="#"
 				/>
 				<SidebarItem
-                    icon={translate}
-                    is_setting="true"
+					icon={translate}
+					is_setting="true"
 					content={
 						<select id="languageSelect">
 							<option value="en">{locale.english}</option>
@@ -110,7 +125,9 @@ export default function Sidebar() {
 						</select>
 					}
 					href="#"
-				/>
+				>
+					<img src={flagIcon} alt="Flag" className="flagIcon" />
+				</SidebarItem>
 			</ul>
 			<span className="sidebarDivider">{locale.socialMedia}</span>
 			<ul className="sidebarLinks">
@@ -143,7 +160,14 @@ export default function Sidebar() {
 	);
 }
 
-function SidebarItem({ icon, content, href, external = false, ...props }) {
+function SidebarItem({
+	icon,
+	content,
+	href,
+	external = false,
+	children,
+	...props
+}) {
 	const { externalLink } = useIcons();
 
 	return (
@@ -156,6 +180,8 @@ function SidebarItem({ icon, content, href, external = false, ...props }) {
 				{icon}
 				{content}
 			</NavLink>
+
+			{children}
 
 			{external && (
 				<span className="externalLinkIcon" title="Open in new tab">

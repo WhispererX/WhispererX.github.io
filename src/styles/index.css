@@ -121,6 +121,14 @@ body {
 .externalLinkIcon {
 	padding: 0 1rem;
 }
+
+.flagIcon {
+	width: 32px;
+	height: 24px;
+	object-fit: cover;
+	border-radius: 2px;
+	margin: 0 1rem;
+}
 /*#endregion ==== END OF SIDEBAR ====*/
 
 /*#region ======= MAIN CONTENT =======*/
@@ -255,18 +263,6 @@ pre {
 	}
 	100% {
 		transform: translateY(0);
-	}
-}
-
-@keyframes switchOrder {
-	0% {
-		order: 0;
-	}
-	50% {
-		order: 1;
-	}
-	100% {
-		order: 0;
 	}
 }
 
