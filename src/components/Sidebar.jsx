@@ -29,10 +29,12 @@ export default function Sidebar() {
 		en: FlagEn,
 		lt: FlagLt,
 		ru: FlagRu,
-	}
+	};
 
 	const [themeIcon, setThemeIcon] = React.useState(darkMode);
-	const [flagIcon, setFlagIcon] = React.useState(flags[getLanguage()] || FlagEn);
+	const [flagIcon, setFlagIcon] = React.useState(
+		flags[getLanguage()] || FlagEn
+	);
 
 	React.useEffect(() => {
 		document.body.className = theme;
@@ -124,8 +126,7 @@ export default function Sidebar() {
 							<option value="ru">{locale.russian}</option>
 						</select>
 					}
-					href="#"
-				>
+					href="#">
 					<img src={flagIcon} alt="Flag" className="flagIcon" />
 				</SidebarItem>
 			</ul>
@@ -134,25 +135,25 @@ export default function Sidebar() {
 				<SidebarItem
 					icon={github}
 					content="GitHub"
-					href="https://github.com"
+					href="https://github.com/WhispererX"
 					external
 				/>
 				<SidebarItem
 					icon={linkedin}
 					content="LinkedIn"
-					href="https://linkedin.com"
+					href="https://www.linkedin.com/in/herkus-%C5%BEilaitis-004b8434a/"
 					external
 				/>
 				<SidebarItem
 					icon={instagram}
 					content="Instagram"
-					href="https://instagram.com"
+					href="https://www.instagram.com/herkus.zz/"
 					external
 				/>
 				<SidebarItem
 					icon={twitter}
 					content="Twitter"
-					href="https://twitter.com"
+					href="https://x.com/WhispererMeta"
 					external
 				/>
 			</ul>
