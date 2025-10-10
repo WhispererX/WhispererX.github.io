@@ -12,11 +12,27 @@
 	"english": "English",
 	"lithuanian": "Lithuanian",
 	"russian": "Russian",
+	"dutch": "Dutch",
 
     "welcome": "Hey! I'm Herkus,\n a [Full-Stack] Developer.",
     "description": "I am a developer with a strong foundation in building efficient, user-centric applications, and I'm eager to bring my problem-solving skills and creativity to a dynamic team.",
     "downloadCV": "Download CV",
 
     "frontendTechnologies": "Frontend Technologies",
-	"backendTechnologies": "Backend Technologies"
+	"backendTechnologies": "Backend Technologies",
+
+	"personalInformation": "Personal Information",
+	"location": "Kaunas, Lithuania",
+	"age": "years old",
+	"bio": "Biography",
+	"bioText": "Currently studying at Kaunas College of Technology. I'm interested in technology and programming, and I'm always looking for new challanges and opportunities to learn and grow. I'm a quick learner and a problem solver, and I'm always eager to take on new projects and work with others to achieve our goals. I'm excited to see what the future holds and to continue growing as a developer.",
+	"education": "Education",
+	"kaunasCollegeOfTechnology": "Kaunas College of Technology",
+	"fieldOfStudy": "Software Systems",
+	"bachelorDegree": "Bachelor's Degree",
+	"kaunasSchoolOfInformationTechnologies": "Kaunas School of Information Technologies",
+	"fieldOfStudyHighSchool": "Javascript Programmer",
+	"highSchoolDegree": "Other",
+	"languages": "Languages",
+	"experience": "Experience"
 }

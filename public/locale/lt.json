@@ -12,11 +12,27 @@
 	"english": "Anglų",
 	"lithuanian": "Lietuvių",
 	"russian": "Rusų",
+	"dutch": "Olandų",
 
 	"welcome": "Sveiki! Aš esu Herkus,\n [Tinklapių] dizaineris.",
 	"description": "Esu programuotojas, turintis tvirtus pagrindus kuriant efektyvias, vartotojui draugiškas programas, ir noriu pritaikyti savo problemų sprendimo įgūdžius bei kūrybiškumą dinamiškoje komandoje.",
 	"downloadCV": "Atsisiųsti CV",
 
 	"frontendTechnologies": "Naudotojo sąsajos technologijos",
-	"backendTechnologies": "Serverio pusės technologijos"
+	"backendTechnologies": "Serverio pusės technologijos",
+
+	"personalInformation": "Asmeninė informacija",
+	"location": "Kaunas, Lietuva",
+	"age": "metai",
+	"bio": "Biografija",
+	"bioText": "Šiuo metu studijuoju Kauno kolegijoje. Domiuosi technologijomis ir programavimu, nuolat ieškau naujų iššūkių ir galimybių mokytis bei tobulėti. Greitai mokausi ir moku spręsti problemas, visada noriu imtis naujų projektų ir dirbti su kitais, kad pasiektume bendrus tikslus. Džiaugiuosi galimybe toliau tobulėti kaip programuotojas ir nekantrauju pamatyti, ką atneš ateitis.",
+	"education": "Išsilavinimas",
+	"kaunasCollegeOfTechnology": "Kauno kolegija",
+	"fieldOfStudy": "Programinės įrangos sistemos",
+	"bachelorDegree": "Bakalauro laipsnis",
+	"kaunasSchoolOfInformationTechnologies": "Kauno informacinių technologijų mokykla",
+	"fieldOfStudyHighSchool": "Javascript programuotojas",
+	"highSchoolDegree": "Kita",
+	"languages": "Kalbos",
+	"experience": "Patirtis"
 }
