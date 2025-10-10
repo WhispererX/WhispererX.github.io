@@ -47,7 +47,7 @@ export default function Home() {
 			<Button
 				icon={download}
 				content={
-					<a href="/cv.pdf" download>
+					<a href="/herkus-zilaitis.pdf" download>
 						{locale.downloadCV}
 					</a>
 				}
