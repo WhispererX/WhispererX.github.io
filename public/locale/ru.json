@@ -35,5 +35,10 @@
 	"fieldOfStudyHighSchool": "Javascript программист",
 	"highSchoolDegree": "Другое",
 	"languages": "Языки",
-	"experience": "Опыт"
+	"experience": "Опыт",
+
+	"sort": "Сортировать",
+	"newestFirst": "Сначала новые",
+	"oldestFirst": "Сначала старые",
+	"noProjectsFound": "Проекты не найдены."
 }

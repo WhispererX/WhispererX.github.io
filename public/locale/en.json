@@ -35,5 +35,10 @@
 	"fieldOfStudyHighSchool": "Javascript Programmer",
 	"highSchoolDegree": "Other",
 	"languages": "Languages",
-	"experience": "Experience"
+	"experience": "Experience",
+
+	"sort": "Sort",
+	"newestFirst": "Newest First",
+	"oldestFirst": "Oldest First",
+	"noProjectsFound": "No projects found."
 }

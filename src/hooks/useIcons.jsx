@@ -25,6 +25,7 @@ import {
 	FaArrowUpRightFromSquare,
 	FaClipboard,
 	FaClipboardCheck,
+	FaMagnifyingGlass,
 } from 'react-icons/fa6';
 
 import {
@@ -67,5 +68,6 @@ export default function useIcons() {
         clipboard: <FaClipboard />,
 		clipboardCheck: <FaClipboardCheck />,
 		download: <MdOutlineFileDownload />,
+		zoom: <FaMagnifyingGlass />,
 	};
 }

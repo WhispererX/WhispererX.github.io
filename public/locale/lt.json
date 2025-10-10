@@ -35,5 +35,10 @@
 	"fieldOfStudyHighSchool": "Javascript programuotojas",
 	"highSchoolDegree": "Kita",
 	"languages": "Kalbos",
-	"experience": "Patirtis"
+	"experience": "Patirtis",
+
+	"sort": "Rūšiuoti",
+	"newestFirst": "Naujausi pirmiausia",
+	"oldestFirst": "Seniausi pirmiausia",
+	"noProjectsFound": "Nerasta projektų, atitinkančių pasirinktus filtrus."
 }
