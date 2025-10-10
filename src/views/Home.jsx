@@ -42,32 +42,36 @@ export default function Home() {
 
 	return (
 		<>
-			<h1>{renderText(locale.welcome)}</h1>
-			<p>{renderText(locale.description)}</p>
-			<Button
-				icon={download}
-				content={
-					<a href="/herkus-zilaitis.pdf" download>
-						{locale.downloadCV}
-					</a>
-				}
-			/>
+			{!locale._meta.loading && !locale._meta.error && (
+				<>
+					<h1>{renderText(locale.welcome)}</h1>
+					<p>{renderText(locale.description)}</p>
+					<Button
+						icon={download}
+						content={
+							<a href="/herkus-zilaitis.pdf" download>
+								{locale.downloadCV}
+							</a>
+						}
+					/>
 
-			<h2>{locale.frontendTechnologies}</h2>
-			<div className="technologies">
-				<Technology icon={js} title="JavaScript" />
-				<Technology icon={react} title="React" />
-				<Technology icon={css} title="CSS" />
-				<Technology icon={html} title="HTML" />
-			</div>
+					<h2>{locale.frontendTechnologies}</h2>
+					<div className="technologies">
+						<Technology icon={js} title="JavaScript" />
+						<Technology icon={react} title="React" />
+						<Technology icon={css} title="CSS" />
+						<Technology icon={html} title="HTML" />
+					</div>
 
-			<h2>{locale.backendTechnologies}</h2>
-			<div className="technologies">
-				<Technology icon={php} title="PHP" />
-				<Technology icon={electron} title="Electron" />
-				<Technology icon={node} title="Node.js" />
-				<Technology icon={firebase} title="Firebase" />
-			</div>
+					<h2>{locale.backendTechnologies}</h2>
+					<div className="technologies">
+						<Technology icon={php} title="PHP" />
+						<Technology icon={electron} title="Electron" />
+						<Technology icon={node} title="Node.js" />
+						<Technology icon={firebase} title="Firebase" />
+					</div>
+				</>
+			)}
 		</>
 	);
 }

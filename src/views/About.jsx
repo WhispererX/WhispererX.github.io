@@ -12,51 +12,64 @@ export default function About() {
 
   return (
 		<>
-			<h2>{locale.personalInformation}</h2>
-			<span className="tag">{locale.location}</span>
-			<span className="tag">
-				{age} {locale.age}
-			</span>
+			{!locale._meta.loading && !locale._meta.error && (
+				<>
+					<h1>{locale.aboutMe}</h1>
+					<h2>{locale.personalInformation}</h2>
+					<span className="tag">{locale.location}</span>
+					<span className="tag">
+						{age} {locale.age}
+					</span>
 
-			<div className="block">
-				<h3>Herkus Žilaitis</h3>
+					<div className="block">
+						<h3>Herkus Žilaitis</h3>
 
-				<div className="phoneNumber">
-					<span className="icon">{phone}</span>
-					<span>+37063285735</span>
-				</div>
+						<div className="phoneNumber">
+							<span className="icon">{phone}</span>
+							<span>+37063285735</span>
+						</div>
 
-				<div className="email">
-					<span className="icon">{email}</span>
-					<span>whisperer.meta@gmail.com</span>
-				</div>
-			</div>
+						<div className="email">
+							<span className="icon">{email}</span>
+							<span>whisperer.meta@gmail.com</span>
+						</div>
+					</div>
 
-			<span className="tag">{locale.bio}</span>
-			<p className='paragraph'>{locale.bioText}</p>
+					<span className="tag">{locale.bio}</span>
+					<p className="paragraph">{locale.bioText}</p>
 
-			<h2>{locale.education}</h2>
-			<span className="tag">{locale.kaunasCollegeOfTechnology}</span>
-			<div className="block">
-				<h3>{locale.fieldOfStudy}</h3>
-				<span>{locale.bachelorDegree}</span>
-			</div>
+					<h2>{locale.education}</h2>
+					<span className="tag">{locale.kaunasCollegeOfTechnology}</span>
+					<div className="block">
+						<h3>{locale.fieldOfStudy}</h3>
+						<span>{locale.bachelorDegree}</span>
+					</div>
 
-			<span className="tag">
-				{locale.kaunasSchoolOfInformationTechnologies}
-			</span>
-			<div className="block">
-				<h3>{locale.fieldOfStudyHighSchool}</h3>
-				<span>{locale.highSchoolDegree}</span>
-      </div>
-      
-      <h2>{locale.languages}</h2>
-      <ul className="languages">
-        <li><span className="tag">{locale.english}</span></li>
-        <li><span className="tag">{locale.lithuanian}</span></li>
-        <li><span className="tag">{locale.russian}</span></li>
-        <li><span className="tag">{locale.dutch}</span></li>
-      </ul>
+					<span className="tag">
+						{locale.kaunasSchoolOfInformationTechnologies}
+					</span>
+					<div className="block">
+						<h3>{locale.fieldOfStudyHighSchool}</h3>
+						<span>{locale.highSchoolDegree}</span>
+					</div>
+
+					<h2>{locale.languages}</h2>
+					<ul className="languages">
+						<li>
+							<span className="tag">{locale.english}</span>
+						</li>
+						<li>
+							<span className="tag">{locale.lithuanian}</span>
+						</li>
+						<li>
+							<span className="tag">{locale.russian}</span>
+						</li>
+						<li>
+							<span className="tag">{locale.dutch}</span>
+						</li>
+					</ul>
+				</>
+			)}
 		</>
 	);
 }
