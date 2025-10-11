@@ -325,9 +325,16 @@ span.tag {
 	display: flex;
 	flex-direction: column;
 	gap: 1rem;
+	list-style: none;
+	padding: 0;
 }
 
-ul li span {
+.languages li {
+	display: flex;
+	align-items: center;
+}
+
+.languages li .tag {
 	display: inline-block;
 	min-width: 100px;
 }
@@ -677,7 +684,6 @@ input, textarea {
 	font-size: 1rem;
 	transition: all 200ms ease-in-out;
 }
-
 
 .btnSubmit.active {
 	color: var(--color-text);

@@ -1,6 +1,7 @@
 import React from 'react'
 import useLocale from '../hooks/useLocale'
 import useIcons from '../hooks/useIcons';
+import Rating from '../components/Rating';
 
 export default function About() {
   const locale = useLocale();
@@ -56,16 +57,20 @@ export default function About() {
 					<h2>{locale.languages}</h2>
 					<ul className="languages">
 						<li>
-							<span className="tag">{locale.english}</span>
+						  <span className="tag">{locale.english}</span>
+						  <Rating rating={5} />
 						</li>
 						<li>
 							<span className="tag">{locale.lithuanian}</span>
+							<Rating rating={5} />
 						</li>
 						<li>
 							<span className="tag">{locale.russian}</span>
+							<Rating rating={1.5} />
 						</li>
 						<li>
-							<span className="tag">{locale.dutch}</span>
+						  <span className="tag">{locale.dutch}</span>
+						  <Rating rating={3} />
 						</li>
 					</ul>
 				</>

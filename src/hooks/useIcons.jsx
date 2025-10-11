@@ -26,6 +26,10 @@ import {
 	FaClipboard,
 	FaClipboardCheck,
 	FaMagnifyingGlass,
+	FaBars,
+	FaStar,
+	FaRegStarHalfStroke,
+	FaRegStar,
 } from 'react-icons/fa6';
 
 import {
@@ -34,7 +38,7 @@ import {
 	MdGTranslate,
 	MdOutlineFileDownload,
 } from 'react-icons/md';
-import { IoLogoFirebase } from 'react-icons/io5';
+import { IoLogoFirebase, IoCloseOutline } from 'react-icons/io5';
 
 //#endregion
 
@@ -69,5 +73,10 @@ export default function useIcons() {
 		clipboardCheck: <FaClipboardCheck />,
 		download: <MdOutlineFileDownload />,
 		zoom: <FaMagnifyingGlass />,
+		menu: <FaBars />,
+		close: <IoCloseOutline />,
+		starFull: <FaStar />,
+		starHalf: <FaRegStarHalfStroke />,
+		starEmpty: <FaRegStar />,
 	};
 }
