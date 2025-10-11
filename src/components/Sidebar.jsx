@@ -111,25 +111,25 @@ export default function Sidebar() {
 					<SidebarItem
 						icon={house}
 						content={locale.home}
-						href="/"
+						href="./"
 						onClick={() => setSidebarOpen(false)}
 					/>
 					<SidebarItem
 						icon={about}
 						content={locale.about}
-						href="/about"
+						href="./about"
 						onClick={() => setSidebarOpen(false)}
 					/>
 					<SidebarItem
 						icon={projects}
 						content={locale.projects}
-						href="/projects"
+						href="./projects"
 						onClick={() => setSidebarOpen(false)}
 					/>
 					<SidebarItem
 						icon={contact}
 						content={locale.contact}
-						href="/contact"
+						href="./contact"
 						onClick={() => setSidebarOpen(false)}
 					/>
 				</ul>
