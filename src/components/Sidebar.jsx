@@ -36,6 +36,8 @@ export default function Sidebar() {
 		flags[getLanguage()] || FlagEn
 	);
 
+	const [sidebarOpen, setSidebarOpen] = React.useState(false);
+
 	React.useEffect(() => {
 		document.body.className = theme;
 		localStorage.setItem('theme', theme);
@@ -87,77 +89,110 @@ export default function Sidebar() {
 	}, [theme]);
 
 	return (
-		<div id="sidebarContainer">
-			<div id="sidebarHeader">
-				<img src={ProfilePicture} alt="Profile" id="profileImage" />
-				<span id="profileName">Herkus Žilaitis</span>
-				<span id="profileTitle">{locale.profileTitle}</span>
+		<>
+			<button
+				className={`sidebar-toggle-btn${sidebarOpen ? ' open' : ''}`}
+				onClick={() => setSidebarOpen((v) => !v)}
+				aria-label={sidebarOpen ? 'Close sidebar' : 'Open sidebar'}>
+				{sidebarOpen ? '✕' : '☰'}
+			</button>
+
+			<div
+				className={`sidebar-overlay${sidebarOpen ? ' open' : ''}`}
+				onClick={sidebarOpen ? () => setSidebarOpen(false) : undefined}
+			/>
+			<div id="sidebarContainer" className={sidebarOpen ? 'open' : ''}>
+				<div id="sidebarHeader">
+					<img src={ProfilePicture} alt="Profile" id="profileImage" />
+					<span id="profileName">Herkus Žilaitis</span>
+					<span id="profileTitle">{locale.profileTitle}</span>
+				</div>
+				<ul className="sidebarLinks">
+					<SidebarItem
+						icon={house}
+						content={locale.home}
+						href="/"
+						onClick={() => setSidebarOpen(false)}
+					/>
+					<SidebarItem
+						icon={about}
+						content={locale.about}
+						href="/about"
+						onClick={() => setSidebarOpen(false)}
+					/>
+					<SidebarItem
+						icon={projects}
+						content={locale.projects}
+						href="/projects"
+						onClick={() => setSidebarOpen(false)}
+					/>
+					<SidebarItem
+						icon={contact}
+						content={locale.contact}
+						href="/contact"
+						onClick={() => setSidebarOpen(false)}
+					/>
+				</ul>
+				<span className="sidebarDivider">{locale.settings}</span>
+				<ul className="sidebarLinks">
+					<SidebarItem
+						icon={themeIcon}
+						is_setting="true"
+						content={
+							<select id="themeSelect">
+								<option value="light">{locale.lightMode}</option>
+								<option value="dark">{locale.darkMode}</option>
+							</select>
+						}
+						href="#"
+					/>
+					<SidebarItem
+						icon={translate}
+						is_setting="true"
+						content={
+							<select id="languageSelect">
+								<option value="en">{locale.english}</option>
+								<option value="lt">{locale.lithuanian}</option>
+								<option value="ru">{locale.russian}</option>
+							</select>
+						}
+						href="#">
+						<img src={flagIcon} alt="Flag" className="flagIcon" />
+					</SidebarItem>
+				</ul>
+				<span className="sidebarDivider">{locale.socialMedia}</span>
+				<ul className="sidebarLinks">
+					<SidebarItem
+						icon={github}
+						content="GitHub"
+						href="https://github.com/WhispererX"
+						external
+						onClick={() => setSidebarOpen(false)}
+					/>
+					<SidebarItem
+						icon={linkedin}
+						content="LinkedIn"
+						href="https://www.linkedin.com/in/herkus-%C5%BEilaitis-004b8434a/"
+						external
+						onClick={() => setSidebarOpen(false)}
+					/>
+					<SidebarItem
+						icon={instagram}
+						content="Instagram"
+						href="https://www.instagram.com/herkus.zz/"
+						external
+						onClick={() => setSidebarOpen(false)}
+					/>
+					<SidebarItem
+						icon={twitter}
+						content="Twitter"
+						href="https://x.com/WhispererMeta"
+						external
+						onClick={() => setSidebarOpen(false)}
+					/>
+				</ul>
 			</div>
-			<ul className="sidebarLinks">
-				<SidebarItem icon={house} content={locale.home} href="/" />
-				<SidebarItem icon={about} content={locale.about} href="/about" />
-				<SidebarItem
-					icon={projects}
-					content={locale.projects}
-					href="/projects"
-				/>
-				<SidebarItem icon={contact} content={locale.contact} href="/contact" />
-			</ul>
-			<span className="sidebarDivider">{locale.settings}</span>
-			<ul className="sidebarLinks">
-				<SidebarItem
-					icon={themeIcon}
-					is_setting="true"
-					content={
-						<select id="themeSelect">
-							<option value="light">{locale.lightMode}</option>
-							<option value="dark">{locale.darkMode}</option>
-						</select>
-					}
-					href="#"
-				/>
-				<SidebarItem
-					icon={translate}
-					is_setting="true"
-					content={
-						<select id="languageSelect">
-							<option value="en">{locale.english}</option>
-							<option value="lt">{locale.lithuanian}</option>
-							<option value="ru">{locale.russian}</option>
-						</select>
-					}
-					href="#">
-					<img src={flagIcon} alt="Flag" className="flagIcon" />
-				</SidebarItem>
-			</ul>
-			<span className="sidebarDivider">{locale.socialMedia}</span>
-			<ul className="sidebarLinks">
-				<SidebarItem
-					icon={github}
-					content="GitHub"
-					href="https://github.com/WhispererX"
-					external
-				/>
-				<SidebarItem
-					icon={linkedin}
-					content="LinkedIn"
-					href="https://www.linkedin.com/in/herkus-%C5%BEilaitis-004b8434a/"
-					external
-				/>
-				<SidebarItem
-					icon={instagram}
-					content="Instagram"
-					href="https://www.instagram.com/herkus.zz/"
-					external
-				/>
-				<SidebarItem
-					icon={twitter}
-					content="Twitter"
-					href="https://x.com/WhispererMeta"
-					external
-				/>
-			</ul>
-		</div>
+		</>
 	);
 }
 

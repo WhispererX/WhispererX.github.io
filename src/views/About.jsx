@@ -1,17 +1,17 @@
-import React from 'react'
-import useLocale from '../hooks/useLocale'
+import React from 'react';
+import useLocale from '../hooks/useLocale';
 import useIcons from '../hooks/useIcons';
 import Rating from '../components/Rating';
 
 export default function About() {
-  const locale = useLocale();
-  const dateOfBirth = new Date(2003, 12, 16);
-  const today = new Date();
-  const age = today.getFullYear() - dateOfBirth.getFullYear();
+	const locale = useLocale();
+	const dateOfBirth = new Date(2003, 12, 16);
+	const today = new Date();
+	const age = today.getFullYear() - dateOfBirth.getFullYear();
 
-  const { phone, email } = useIcons();
+	const { phone, email } = useIcons();
 
-  return (
+	return (
 		<>
 			{!locale._meta.loading && !locale._meta.error && (
 				<>
@@ -57,8 +57,8 @@ export default function About() {
 					<h2>{locale.languages}</h2>
 					<ul className="languages">
 						<li>
-						  <span className="tag">{locale.english}</span>
-						  <Rating rating={5} />
+							<span className="tag">{locale.english}</span>
+							<Rating rating={5} />
 						</li>
 						<li>
 							<span className="tag">{locale.lithuanian}</span>
@@ -69,8 +69,8 @@ export default function About() {
 							<Rating rating={1.5} />
 						</li>
 						<li>
-						  <span className="tag">{locale.dutch}</span>
-						  <Rating rating={3} />
+							<span className="tag">{locale.dutch}</span>
+							<Rating rating={2.5} />
 						</li>
 					</ul>
 				</>

@@ -27,5 +27,5 @@ export default function Rating({ rating = 0, maxRating = 5 }) {
 		);
 	});
 
-	return <div className="ratings">{stars}</div>;
+	return <div className="ratings" title={`${rating} out of ${maxRating}`}>{stars}</div>;
 }

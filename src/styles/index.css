@@ -73,6 +73,7 @@ body {
 	margin: 0;
 	padding: 0 10px;
 	gap: 5px;
+	overflow: hidden;
 }
 
 .sidebarDivider {
@@ -337,6 +338,7 @@ span.tag {
 .languages li .tag {
 	display: inline-block;
 	min-width: 100px;
+	cursor: default;
 }
 
 /*======= PROJECTS =======*/
@@ -645,7 +647,8 @@ form {
 	max-width: 600px;
 }
 
-form h3, label {
+form h3,
+label {
 	color: var(--color-text);
 }
 
@@ -665,7 +668,8 @@ form h3, label {
 	gap: 0.5rem;
 }
 
-input, textarea {
+input,
+textarea {
 	background-color: var(--color-highlight);
 	color: var(--color-text);
 	border: 1px solid var(--color-border);
@@ -673,6 +677,11 @@ input, textarea {
 	padding: 0.5rem;
 	font-size: 1rem;
 	resize: vertical;
+}
+
+.formRow input {
+	max-width: 100%;
+	width: 100%;
 }
 
 .btnSubmit {
@@ -699,4 +708,145 @@ input, textarea {
 	color: rgb(115, 173, 115);
 	font-weight: bold;
 	text-align: center;
+}
+
+/*======= RATINGS =======*/
+.languages li .tag:hover + .ratings,
+.ratings:hover {
+	color: var(--color-text);
+}
+
+.ratingStar,
+.ratingStar > svg {
+	transition: all 150ms ease-in-out;
+}
+.ratingStar:hover > svg {
+	text-shadow: 0 0 5px var(--color-highlight);
+	transform: scale(1.2);
+}
+
+/*======= RESPONSIVENESS =======*/
+.sidebar-toggle-btn {
+	position: fixed;
+	top: 1rem;
+	right: 1rem;
+	z-index: 2100;
+
+	color: var(--color-text);
+	background: none;
+	border: none;
+	border-radius: 8px;
+	width: 56px;
+	height: 56px;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	font-size: 2.2rem;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+	cursor: pointer;
+	transition: color 0.2s, box-shadow 0.2s;
+}
+.sidebar-toggle-btn.open {
+	color: var(--color-text);
+}
+
+@media (max-width: 768px) {
+	.sidebar-toggle-btn {
+		display: flex;
+		width: 56px;
+		height: 56px;
+		font-size: 2.2rem;
+		top: 1rem;
+		right: 1rem;
+	}
+}
+
+@media (max-width: 480px) {
+	.sidebar-toggle-btn {
+		width: 48px;
+		height: 48px;
+		font-size: 1.7rem;
+		top: 0.7rem;
+		right: 0.7rem;
+	}
+
+	.formRow {
+		flex-direction: column;
+	}
+}
+
+.sidebar-overlay {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: 1999;
+	background: rgba(0, 0, 0, 0.5);
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity 0.3s;
+}
+.sidebar-overlay.open {
+	opacity: 1;
+	pointer-events: auto;
+}
+
+#sidebarContainer.open {
+	pointer-events: auto;
+}
+@media (max-width: 768px) {
+	:root {
+		font-size: 18px;
+	}
+
+	#sidebarContainer {
+		position: fixed;
+		left: 0;
+		top: 0;
+		height: 100vh;
+		width: 80vw;
+		max-width: 340px;
+		min-width: 0;
+		transform: translateX(-100%);
+		border-right: none;
+		transition: transform 0.3s;
+		box-shadow: none;
+		z-index: 2000;
+	}
+	#sidebarContainer.open {
+		transform: translateX(0);
+		box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.5);
+		z-index: 2001;
+	}
+	.sidebar-toggle-btn {
+		width: 56px;
+		height: 56px;
+		font-size: 2.2rem;
+		top: 1rem;
+		right: 1rem;
+	}
+}
+@media (max-width: 480px) {
+	:root {
+		font-size: 18px;
+	}
+
+	main {
+		margin: 1.5rem 2rem;
+	}
+
+	#sidebarContainer {
+		width: 100vw;
+		max-width: 100vw;
+		padding-bottom: 2rem;
+	}
+
+	.sidebar-toggle-btn {
+		width: 48px;
+		height: 48px;
+		font-size: 1.7rem;
+		top: 0.7rem;
+		right: 0.7rem;
+	}
 }
