@@ -40,5 +40,15 @@
 	"sort": "Rūšiuoti",
 	"newestFirst": "Naujausi pirmiausia",
 	"oldestFirst": "Seniausi pirmiausia",
-	"noProjectsFound": "Nerasta projektų, atitinkančių pasirinktus filtrus."
+	"noProjectsFound": "Nerasta projektų, atitinkančių pasirinktus filtrus.",
+
+	"contactDescription": "Visada ieškau galimybių bendradarbiauti su puikiais žmonėmis įdomiuose projektuose. Reikia papildomos rankos? Turiu dvi!",
+	"formTitle": "Siųsti žinutę",
+	"formDescription": "Užpildykite žemiau esančią formą ir aš su jumis susisieksiu kuo greičiau.",
+	"firstName": "Vardas",
+	"lastName": "Pavardė",
+	"email": "El. paštas",
+	"message": "Žinutė",
+	"submit": "Pateikti",
+	"contactSuccess": "Ačiū už jūsų žinutę!"
 }

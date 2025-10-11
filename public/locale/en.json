@@ -40,5 +40,15 @@
 	"sort": "Sort",
 	"newestFirst": "Newest First",
 	"oldestFirst": "Oldest First",
-	"noProjectsFound": "No projects found."
+	"noProjectsFound": "No projects found.",
+
+	"contactDescription": "I'm always looking to collaborate on interesting projects with great people. Need a supportive hand? I have two!",
+	"formTitle": "Send a message",
+	"formDescription": "Fill out the form below and I'll get back to you as soon as possible.",
+	"firstName": "First Name",
+	"lastName": "Last Name",
+	"email": "Email",
+	"message": "Message",
+	"submit": "Submit",
+	"contactSuccess": "Thanks for your message!"
 }
