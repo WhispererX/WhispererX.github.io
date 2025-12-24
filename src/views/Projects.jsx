@@ -4,10 +4,13 @@ import ImagePopup from '../components/ImagePopup';
 import Button from '../components/Button';
 import useLocale from '../hooks/useLocale';
 
-import CompassPreview from '../assets/preview/compass-preview.png';
 import GideonPreview from '../assets/preview/gideon-preview.png';
 import GmLitePreview from '../assets/preview/gm-lite-preview.png';
 import LearnGmlPreview from '../assets/preview/learn-gml-preview.png';
+import ProjexPreview from '../assets/preview/projex-preview.png';
+import PixoPreview from '../assets/preview/pixo-preview.png';
+import ChefAiPreview from '../assets/preview/chef-ai-preview.png';
+import WhiNotePreview from '../assets/preview/whi-note-preview.png';
 
 export default function Projects() {
 	const locale = useLocale();
@@ -29,16 +32,6 @@ export default function Projects() {
 	const projectsData = [
 		{
 			id: 1,
-			title: 'Compass',
-			description:
-				'a League of Legends progress tracker app designed to help players monitor their in-game performance, track improvement over time, and gain insights into their gameplay.',
-			previewImage: CompassPreview,
-			githubUrl: 'https://github.com/WhispererX/lol-compass',
-			tags: ['CSS', 'React', 'Electron', 'Git'],
-			date: new Date('2025-10-08'),
-		},
-		{
-			id: 2,
 			title: 'GM Lite',
 			description:
 				'Lightweight feature-rich code editor built to enhance developer productivity for gamemaker projects.',
@@ -48,7 +41,7 @@ export default function Projects() {
 			date: new Date('2025-10-01'),
 		},
 		{
-			id: 3,
+			id: 2,
 			title: 'Gideon',
 			description:
 				'AI-powered desktop agent that automates everyday tasks, manages files, controls your system and integrates with services like Gmail, Calendar, etc.',
@@ -58,7 +51,7 @@ export default function Projects() {
 			date: new Date('2025-09-10'),
 		},
 		{
-			id: 4,
+			id: 3,
 			title: 'Learn GML',
 			description:
 				'LearnGML is a comprehensive curriculum website designed to teach users how to create games with GameMaker.',
@@ -69,14 +62,42 @@ export default function Projects() {
 			date: new Date('2025-08-05'),
 		},
 		{
-			id: 5,
+			id: 4,
 			title: 'Projex',
 			description:
 				'Projex is a sleek and modern project management application designed to help teams and individuals organize, track, and complete tasks efficiently. With an intuitive interface and powerful features…',
+			previewImage: ProjexPreview,
 			githubUrl: 'https://github.com/WhispererX/projex',
 			tags: ['CSS', 'React', 'Electron', 'Git'],
 			date: new Date('2025-07-28'),
 		},
+		{
+			id: 5,
+			title: 'Pixo',
+			description: "A powerful, feature-rich pixel art editor built with Electron and React, inspired by Aseprite's design and functionality.",
+			previewImage: PixoPreview,
+			githubUrl: 'https://github.com/WhispererX/pixo',
+			tags: ['CSS', 'React', 'Electron', 'Git'],
+			date: new Date('2025-12-20'),
+		},
+		{
+			id: 6,
+			title: 'Chef AI',
+			description:
+				'Chef AI is a personal cookbook app that lets you store your own recipes, manage your pantry, and cook with an AI chef that understands your ingredients and guides you step by step.',
+			previewImage: ChefAiPreview,
+			githubUrl: 'https://github.com/WhispererX/chef-ai',
+			tags: ['React Native', 'Expo', 'Git'],
+		},
+		{
+			id: 7,
+			title: 'Whi Note',
+			description:
+				'A modern, feature-rich notes application built with React Native and Expo. Create, organize, and manage your notes with a clean, intuitive interface supporting both light and dark themes.',
+			previewImage: WhiNotePreview,
+			githubUrl: 'https://github.com/WhispererX/whi-note',
+			tags: ['React Native', 'Expo', 'Git'],
+		}
 	];
 
 	const [sortOrder, setSortOrder] = useState('desc');
